@@ -106,6 +106,7 @@ body{
 	width: 940px;
 }
 
+/* logo e menu*/
 #header{
 	width: 100%;
 	height: 50px;
@@ -162,6 +163,7 @@ ul.sem-marcador, ol.sem-marcador{
 	transition: 1s;
 }
 
+/*baground do topo e texto*/
 .img1{
 	width:100%;
     height:600px;
@@ -194,6 +196,7 @@ h1{
 	color: #e6b125;
 }
 
+/*outros cursos*/
 hr{
 	width: 40px;
 	margin-top: -10px;
@@ -229,6 +232,7 @@ hr{
 	margin-right: 18px;
 }
 
+/*background do meio e texto*/
 .background2{
 	background-image: url(../img/home/img-meio.png);
 	margin-top: 50px;
@@ -255,6 +259,7 @@ hr{
 	margin-top: -15px;
 }
 
+/*formulario*/
 .form h2{
 	width: 380px;
 	text-align: center;
@@ -331,16 +336,7 @@ hr{
 	text-decoration: underline;
 }
 
-.noticia{
-	margin-top: 50px;
-	background-color: #000;
-}
-
-.noticia:hover{
-	background-color: #373636;
-	transition: 1s;
-}
-
+/*ultimas noticias texto e imagens*/
 .data{
 	width: 20px;
 	margin-left: 30px;
@@ -359,14 +355,9 @@ hr{
 	margin-left: 80px;
 }
 
-.conteudo h2{
-	color: #00c176;
-}
-
 .conteudo p{
 	width: 400px;
 	font-family: 'Myriad Pro';
-	color: #fff;
 	font-style: normal;
 	margin-bottom: 20px;
 }
@@ -394,22 +385,27 @@ hr{
 .noticia2{
 	margin-top: 50px;
 	background-color: #fff;
+	margin-bottom: 20px;
 }
 
-.noticia2 p{
-	color: #000;
+.noticia2:hover{
+	margin-top: 50px;
+	background-color: #000;
+	margin-bottom: 20px;
+	color: #fff;
 }
 
-.noticia2 h2{
-	color: #000;
+.noticia:hover .titulo{
+	color: #00c176;
 }
 
-.noticia2 hr{
+.hr{
 	width: 940px;
 	border: 1px solid #f4f3f3;
 	margin-top: 10px;
 }
 
+/*rodape*/
 .cor{
 	width: 100% !important;
 	background-color: #ebebeb;
@@ -438,6 +434,7 @@ hr{
 
 .fundo{
 	background-color: #231f20;
+	padding-bottom: 50px;
 }
 
 .logo-rodape img{
@@ -447,5 +444,28 @@ hr{
 .logo-rodape p{
 	color: #fff;
 	font-family:'Gotham Light';
+	font-size: 13px;
+}
+
+.icone{
+	margin-top: 80px;
+}
+
+.tel{
+	margin-top: 80px;
+	margin-left: 120px;
+}
+
+.num {
+	margin-top: 60px;
+	margin-left: -220px;
+	color: #fff;
+	font-family: 'Gotham Light';
+	font-size: 15px;
+	text-align: right;
+}
+
+.num p{
+	color: #fff;
 	font-size: 13px;
 }
