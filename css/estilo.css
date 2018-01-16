@@ -469,3 +469,198 @@ hr{
 	color: #fff;
 	font-size: 13px;
 }
+
+/* Quem somos*/
+
+.background-qs{
+	width:100%;
+    height:600px;
+    background-image:url(../img/quem-somos/img-topo.png);
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    position:relative;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.background-qs p{
+	color: #00c176;
+	position: absolute;
+	font-family: 'Gotham Bold';
+	font-size: 28px;
+	width: 200px;
+	top: 180px;
+	left: 500px;
+
+}
+
+.background-qs p::first-line{
+	color: #fff;
+	font-family: 'Gotham Light';
+}
+
+.hr-qs{
+	border: 1px solid #000;
+	width: 30px;
+	margin-left: 50%;
+	margin-top: 30px;
+}
+
+.texto{
+	text-align: center;
+	margin-top: 20px;
+	font-family: 'Gotham Light';
+}
+
+.caixa-qs{
+	border: 1px solid #c2c2c2;
+	margin-top: 100px;
+	width: 280px;
+	height: 280px;
+	margin-left: 15px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.icone-qs{
+	position: absolute;
+	top: -50px;
+	left: 33%;
+}
+
+.caixa-qs h5{
+	text-align: center;
+	padding-top: 70px;
+	color: #00c176;
+}
+
+.caixa-qs p{
+	padding:15px 15px;
+	font-family:'Gotham Light';
+	font-size: 14px;
+	text-align: center;
+}
+
+/* Palestrantes*/
+.background-palestrantes{
+	width:100%;
+    height:600px;
+    background-image:url(../img/palestrantes/img-topo.png);
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    position:relative;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.background-palestrantes p{
+	color: #00c176;
+	position: absolute;
+	font-family: 'Gotham Bold';
+	font-size: 29px;
+	width: 200px;
+	top: 180px;
+	left: 500px;
+}
+
+.background-palestrantes p::first-line{
+	color: #fff;
+	font-family: 'Gotham Light';
+	font-size: 27px;
+}
+
+.foto-prof{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.texto-prof{
+	margin-top: 150px;
+	font-family: 'Gotham Light';
+}
+
+.texto-prof h2{
+	color: #00c176;
+	font-family: 'Gotham Bold';
+	font-size: 28px;
+}
+
+.linha-palestrantes{
+	width: 460px;
+	border: 1px solid #f4f3f3;
+	margin-top: 10px;
+}
+
+/*Depoimentos*/
+.background-dp{
+	width:100%;
+    height:600px;
+    background-image:url(https://s3-sa-east-1.amazonaws.com/happybiz-web/Experiencia-De-Sucesso/novo-site/Depoimentos/img-topo.png);
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    position:relative;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.background-dp p{
+	color: #00c176;
+	position: absolute;
+	font-family: 'Gotham Bold';
+	font-size: 29px;
+	width: 200px;
+	top: 180px;
+	left: 500px;
+}
+
+.background-dp p::first-line{
+	color: #fff;
+	font-family: 'Gotham Light';
+	font-size: 27px;
+}
+
+/*Coaching*/
+
+.logotipo-coaching{
+	width: 200px;
+	height: auto;
+}
+
+.coaching-menu{
+	background-color:#365325;
+	width: 100%;
+	height:130px;
+}
+
+.link a{
+	padding-right: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Roboto';
+	text-transform: uppercase;
+}
+
+.link{
+	margin-top: 50px;
+}
+
+.link a:hover{
+	text-decoration: underline;
+	color: #e1b21a;
+}
+
+.background-coaching{
+	width:100%;
+    height:600px;
+    background-image:url(https://s3-sa-east-1.amazonaws.com/happybiz-web/Experiencia-De-Sucesso/novo-site/coaching/background-topo.png);
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    position:relative;
+    margin-bottom: 30px;
+    position: relative;
+
+}
