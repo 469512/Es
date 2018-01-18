@@ -780,6 +780,7 @@ hr{
     background-position: center center;
     background-repeat:no-repeat;
     position:relative;
+    margin-bottom: 50px;
 }
 
 .background-contato p{
@@ -797,4 +798,104 @@ hr{
 	color: #fff;
 	font-family: 'Gotham Light';
 	font-size: 27px;
+}
+
+.fale-conosco-icone{
+	margin-top: 30px;	
+}
+
+.fale-conosco-texto{
+	margin-top: 10px;
+	margin-left: -25px;
+	font-family: 'Gotham Light';
+}
+
+.formulario-pai{
+	position: relative;
+}
+
+.formulario-filho{
+	position: absolute;
+	left: 900px;
+	top: 860px;
+}
+
+.formulario-filho label{
+	font-size: 13px;
+	font-weight: 300;
+	text-decoration: none;
+	margin: 20px;
+	display: inline;
+}
+
+.formulario-filho input{
+	text-decoration: none;
+	display: inline;
+	margin-bottom: 10px;
+	padding: 10px 2%;
+	width: 30%;
+	text-align: left;
+	float: left;
+}
+
+.alinhar{
+	margin-top: -18px;
+	width: 42% !important;
+	margin-left: 20px;	
+}
+
+.alinhar2{
+	width: 46% !important;
+	margin-left: 20px;	
+	text-decoration: none;
+	padding: 10px 2%;
+}
+
+.formulario-filho textarea{
+	text-decoration: none;
+	display: inline;
+	margin-bottom: 10px;
+	padding: 10px 2%;
+	width: 80%;
+	height: 200px;
+	text-align: left;
+}
+
+.filho2{
+	text-decoration: none;
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px 2%;
+	width: 80% !important;
+	text-align: left;
+	margin: auto;
+}
+
+.formulario-caixa{
+	border: 1px solid #e5e5e5;
+	background-color: #fff;
+}
+
+.formulario-botao{
+	border: 1px solid #00c176;
+	background-color: #00c176;
+	color: #fff;
+}
+
+.formulario-filho input.formulario-botao{
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.formulario-filho input.formulario-botao:hover{
+		background-color: #6ac3a1;
+		color: #fff;
+		transition: 1s;
+}
+
+.mapa{
+	width: 100%;
+	height: auto;
+	margin-top: 200px;
 }

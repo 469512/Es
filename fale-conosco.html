@@ -10,7 +10,7 @@
 <body>
 	<header>
 		<div id="header">
-			<img class="logo" src="img/logo-topo.png" alt="" />
+			<a href="index.html"><img class="logo" src="img/logo-topo.png" alt="" /></a>
 		</div>
 		<div class="menu">
 			<nav>
@@ -34,19 +34,90 @@
 			<p>Fale conosco ENVIE UM E-MAIL OU LIGUE PARA NÓS!</p>
 		</div>
 	</section>
-	<section>
+	<section >
 		<div class="linha">
 			<div class="coluna col6">
 				<h2>ENTRE EM CONTATO</h2><hr>
-				<div class="contato">
-					<img src="img/fale-conosco/icone-tel.png" alt="" />
-					<p>Telefone:</p>
-					<p>(11) 3522-1873</p>
-				</div>
 			</div>
-			
+			<div class=" coluna col6 formulario-pai">
+				<h2>ENVIE UM E-MAIL</h2><hr>				
+			</div>
+		</div>
+		<div class="linha">
+			<div class="coluna col1 fale-conosco-icone">
+				<img src="img/fale-conosco/icone-tel.png" alt="" />
+			</div>
+			<div class="coluna col11 fale-conosco-texto">
+				<p><strong>Telefone:</strong></p>
+				<p>(11) 3522-1873</p>
+			</div>
+		</div>
+		<div class="linha">
+			<div class="coluna col1 fale-conosco-icone">
+				<img src="img/fale-conosco/icone-email.png" alt="" />
+			</div>
+			<div class="coluna col11 fale-conosco-texto">
+				<p><strong>E-mail:</strong></p>
+				<p>contato@experienciadesucesso.com.br</p>
+			</div>
+		</div>
+		<div class="linha">
+			<div class="coluna col1 fale-conosco-icone">
+				<img src="img/fale-conosco/icone-mapa.png" alt="" />
+			</div>
+			<div class="coluna col11 fale-conosco-texto">
+				<p><strong>Endereço:</strong></p>
+				<p>Avenida Angélica, 2071 | 1º Andar | <br>Santa Cecília | São Paulo <br> Horário: Seg a Sex das 9h às 18h</p>
+			</div>
+		</div>
+		<div class="linha">
+			<div class="coluna col7 formulario-filho">
+				<form action="">
+					<label for="nome"></label>
+					<input type="text" name="nome" placeholder="Nome*" class="formulario-caixa filho2" />
+					<label for="email"></label>
+					<input type="text" name="email" placeholder="CPF*" class="formulario-caixa" />
+					<label for="assunto"></label>
+					<input type="text" name="assunto" placeholder="E-mail*" class="formulario-caixa alinhar" />
+					<label for="mensagem"></label>
+					<input type="text" name="assunto" placeholder="Telefone*" class="formulario-caixa" />
+					<label for="mensagem"></label>
+					<select name="Assunto" form="carform" class="formulario-caixa alinhar2">
+						<option></option>
+					</select>
+					<textarea name="mensagem" placeholder="Mensagem" class="formulario-caixa"></textarea>
+					<input type="submit" name="enviar" class="formulario-botao" value="Enviar" />				
+				</form>
+			</div>
 		</div>
 	</section>
+	<section>
+		<div>
+			<img class="mapa" src="img/fale-conosco/mapa.png" alt="" />
+		</div>
+	</section>
+	<footer class="fundo">
+		<div class="linha">
+			<div class="coluna col4 logo-rodape">
+				<img src="img/logo-topo.png" alt="" />
+				<p>© 2017 www.experienciadesucesso.com.br <br> Todos os direitos reservados.</p>
+			</div>
+			<div class="coluna col3 icone">
+				<ul class="inline sem-marcador">
+					<li><img src="img/icone-face.png" alt=""></li>
+					<li><img src="img/icone-youtube.png" alt=""></li>
+					<li><img src="img/icone-insta.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="coluna col1 tel">
+				<img src="img/telef.png" alt="" />
+			</div>
+			<div class="coluna col4 num">
+				<h2>11 3522 1873</h2>
+				<p>Seg a Sex das 9h ás 18h entre em contato <br>contato@experienciadesucesso.com.br</p>	
+			</div>	
+		</div>
+	</footer>
 
 </body>
 </html>
