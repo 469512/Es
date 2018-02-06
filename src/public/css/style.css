@@ -61,6 +61,16 @@ p,
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+.light,
+footer p {
+  font-weight: 100;
+}
+.bold {
+  font-weight: bold;
+}
 .capitular:first-letter {
   font-size: 30px;
   float: left;
@@ -172,6 +182,31 @@ h6 {
 .font-extra-large {
   font-size: 22px;
 }
+.bg-black {
+  background-color: #333;
+}
+.bg-text {
+  background-color: 'black';
+}
+.bg-oceano {
+  background-color: #06c47a;
+}
+.bg-inverse {
+  background-color: #fff;
+}
+.text-black {
+  color: #333;
+}
+.text-text {
+  color: 'black';
+}
+.text-oceano {
+  color: #06c47a;
+}
+.text-inverse,
+footer {
+  color: #fff;
+}
 body {
   font: 100%;
   font-family: 'gothan', sans-serif;
@@ -260,7 +295,7 @@ select.form-control {
   padding: 10px 40px;
   color: #fff;
   background-color: #06c47a;
-  transition: color 1s, box-shadow 1s;
+  transition: 'inverse' 1s, box-shadow 1s;
 }
 .btn:hover {
   background-color: #06c47a;
@@ -851,30 +886,6 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-.bg-black {
-  background-color: #333;
-}
-.bg-text {
-  background-color: 'black';
-}
-.bg-oceano {
-  background-color: #06c47a;
-}
-.bg-inverse {
-  background-color: #fff;
-}
-.text-black {
-  color: #333;
-}
-.text-text {
-  color: 'black';
-}
-.text-oceano {
-  color: #06c47a;
-}
-.text-inverse {
-  color: #fff;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
