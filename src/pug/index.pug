@@ -2,8 +2,24 @@ extends ./_layouts/es.pug
 
 block content
     section#banner-principal
+        .container-fluid
+            .row
+                .col-sm-12
+                    img.img-responsive(src="img/img-topo.png", alt="Imagem topo")
+    section#cursos
         .container
-            .col-sm-12
-                h1 Testando
+            .row
+                h3.bold  Outros cursos
+    section#registrar(style="background-image:url(img/img-meio.png)")
+        .container
+            .row
+                h3.bold  Outros cursos
+    section#artigos
+        .container
+            .row
+                h3.bold  Outros cursos
+    section#video
+        .container
+            .row
 block append scriptsJS 
     script(src="js/app.js")
