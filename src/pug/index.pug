@@ -4,22 +4,35 @@ block content
     section#banner-principal
         .container-fluid
             .row
-                .col-sm-12
+                .col-sm-12.banners
                     img.img-responsive(src="img/img-topo.png", alt="Imagem topo")
-    section#cursos
+    section#cursos.section
         .container
             .row
-                h3.bold  Outros cursos
-    section#registrar(style="background-image:url(img/img-meio.png)")
+                h3.bold.line  Outros cursos
+                .col-sm-12
+                    .row.cursos-todos
+                        each i in [1, 2, 3, 4]
+                            .col-sm-4.col-md-3
+                                .curso
+                                    .div-curso-back.text-center(style="background-image:url(img/home/acelera.png)")
+                                        a(href="#") Saiba mais
+                                    .div-curso-title
+                                        h4.text-center
+                                            span.text-oceano Acelera | 
+                                            | Como impulsionar o crescimento da sua carreira
+                                    .div.curso-data
+                                        p.text-oceano.text-center 2017
+
+
+    section#registrar.section(style="background-image:url(img/img-meio.png)")
         .container
             .row
-                h3.bold  Outros cursos
-    section#artigos
+                h3.bold.line  Outros cursos
+    section#artigos.section
         .container
             .row
-                h3.bold  Outros cursos
+                h3.bold.line  Outros cursos
     section#video
         .container
             .row
-block append scriptsJS 
-    script(src="js/app.js")

@@ -30,6 +30,21 @@ h6,
 html {
   font-family: 'gotham', serif;
 }
+.relative {
+  position: relative;
+}
+.absolute,
+#topo {
+  position: absolute;
+}
+.z-alto,
+#topo {
+  z-index: 2;
+}
+.padding-zero,
+.banners {
+  padding: 0;
+}
 @font-face {
   font-family: 'gotham';
   src: url("fontes/gothammedium-webfont.eot");
@@ -840,6 +855,42 @@ header {
 }
 #topo {
   background-color: rgba(0,0,0,0.8);
+  width: 100%;
+}
+.logo-container {
+  padding: 15px 0;
+}
+.line {
+  position: relative;
+}
+.line::after {
+  content: " ";
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.cursos-todos h4 {
+  font-size: 16px;
+}
+.cursos-todos .curso {
+  border: 1px solid #ebebeb;
+}
+.div-curso-back {
+  width: 100%;
+}
+.div-curso-back::after {
+  content: "";
+  display: block;
+  padding-bottom: 80%;
+}
+.section {
+  padding: 40px 0;
+}
+.cursos-todos {
+  padding: 30px 0;
 }
 footer {
   padding: 120px 0 30px 0px;
@@ -884,6 +935,9 @@ footer .contato {
 .navegacao {
   border-top: 1px solid #06c47a;
 }
+.menu {
+  cursor: pointer;
+}
 #desk-nav {
   color: #fff;
   display: -webkit-box;
@@ -925,6 +979,9 @@ footer .contato {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .menu {
+    display: none;
   }
 }
 

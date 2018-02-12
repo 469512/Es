@@ -4,7 +4,7 @@
 	console.log(_t);
 	$('.menu').on('click', function(){
 		console.log(_t);
-		$('#desk-nav').slideToggle()();
+		$('#desk-nav').slideToggle(200);
 	});
 
 })($)

@@ -1,0 +1,40 @@
+
+#topo
+    @extends .absolute
+
+.banners
+    @extends .padding-zero
+
+.line
+    position: relative
+    &::after
+        content: " "
+        width: 30px
+        height: 1px
+        background-color: black
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+.cursos-todos
+    h4 
+        font-size: 16px
+    .curso
+        border 1px solid #ebebeb
+
+
+.div-curso-back
+    width: 100%;
+    &::after
+        content: "";
+        display: block;
+        padding-bottom: 80%;
+
+.section 
+    padding: 40px 0
+
+.cursos-todos
+    padding 30px 0
+
+
+        
