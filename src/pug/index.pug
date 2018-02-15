@@ -1,28 +1,45 @@
 extends ./_layouts/es.pug
 
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
 block content
     section#banner-principal
         .container-fluid
             .row
-                .col-sm-12.banners
-                    img.img-responsive(src="img/img-topo.png", alt="Imagem topo")
+                .col-sm-12.banners#banners
+                    img.img-responsive(src="img/banner-1.jpg", alt="Imagem topo")
+                    img.img-responsive(src="img/banner-2.jpg", alt="Imagem topo")
+                    img.img-responsive(src="img/banner-3.jpg", alt="Imagem topo")
     section#cursos.section
         .container
             .row
                 h3.bold.line  Outros cursos
                 .col-sm-12
-                    .row.cursos-todos
-                        each i in [1, 2, 3, 4]
-                            .col-sm-4.col-md-3
+                    .row
+                        .arrowsPlace
+
+                    .row.cursos-todos#cursos-todos
+                        each i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                            .col-xs-6.col-sm-4.col-md-3
                                 .curso
-                                    .div-curso-back.text-center(style="background-image:url(img/home/acelera.png)")
-                                        a(href="#") Saiba mais
-                                    .div-curso-title
+                                    .div-curso-back.text-center(style="background-image:url(img/home/ewp.png)")
+                                        a(href="#") 
+                                            span Saiba mais
+                                    .div-curso-title.pd-20
                                         h4.text-center
                                             span.text-oceano Acelera | 
                                             | Como impulsionar o crescimento da sua carreira
                                     .div.curso-data
-                                        p.text-oceano.text-center 2017
+                                        .line-data.clearfix
+                                            .block
+                                        .icon-data
+                                            p.text-oceano.text-center
+                                                span
+                                                | 2018
 
 
     section#registrar.section(style="background-image:url(img/img-meio.png)")
@@ -32,7 +49,38 @@ block content
     section#artigos.section
         .container
             .row
-                h3.bold.line  Outros cursos
-    section#video
+                h3.bold.line  ÚLTIMOS ARTIGOS
+                .col-xs-12.artigo-w
+                    .row
+                        .col-md-2.artigo-data
+                            h4.text-oceano 
+                                span.dia 15 <br>
+                                span OUT
+                        .col-md-6.artigo-textos
+                            h4 Lorem ipsum dolor sit amet
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam...
+                            p
+                                a.btn.btn-default Saiba Mais
+                        .col-md-4.artigo-foto
+                            img(src="img/artigo.png", alt="Artigo titulo")
+
+
+    section#video.bg-fundo
         .container
             .row
+                .col-sm-12.pd-40-top
+                    h3.text-oceano.text-center.bold PRINCÍPIOS DO MUNDO INTERIOR <br>
+                        | PARA SUCESSO NO MUNDO REAL
+                    h5.text-center.light Transformar vidas através de experiências de aprendizado,<br>
+                     | conectando seus pensamentos a uma atitude que conduz ao sucesso.
+            .row
+                .col-sm-12
+                    .laptop-wrapper
+                        iframe(src="https://player.vimeo.com/video/170658493?title=0&byline=0&portrait=0", frameborder="0", allowfullscreen)
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+
