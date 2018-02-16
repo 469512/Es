@@ -50,19 +50,25 @@ block content
         .container
             .row
                 h3.bold.line  ÚLTIMOS ARTIGOS
-                .col-xs-12.artigo-w
-                    .row
-                        .col-md-2.artigo-data
-                            h4.text-oceano 
-                                span.dia 15 <br>
-                                span OUT
-                        .col-md-6.artigo-textos
-                            h4 Lorem ipsum dolor sit amet
-                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam...
-                            p
-                                a.btn.btn-default Saiba Mais
-                        .col-md-4.artigo-foto
-                            img(src="img/artigo.png", alt="Artigo titulo")
+                each i in [1, 2, 3, 4]
+                    // artigo
+                    .col-xs-12.artigo-w
+                        .row
+                            .col-md-4.artigo-foto.col-sm-4.col-sm-push-8
+                                img.img-responsive.center-block(src="img/artigo.png", alt="Artigo titulo")
+
+                            .col-md-8.col-sm-8.col-sm-pull-4
+                                .row
+                                    .col-md-2
+                                        .artigo-data
+                                            h4.text-oceano 
+                                                span.dia 15 <br>
+                                                span OUT
+                                    .col-md-10.artigo-textos
+                                        h4 Lorem ipsum dolor sit amet
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam...
+                                        p
+                                            a.btn.btn-default Saiba Mais
 
 
     section#video.bg-fundo

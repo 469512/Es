@@ -53,11 +53,18 @@
         a
             opacity 1
 
+.artigo-data
+    margin 0 auto
+    padding-left: 20px
 
 .artigo-w
     background-color white
     transition 1s
     color black
+    padding 0 20px
+    padding-top 30px
+    padding-bottom: 30px
+    border-bottom 1px solid lightgray
     .dia 
         font-size: 65px
     &:hover
@@ -126,6 +133,18 @@ img.slick-disabled
     background-repeat: no-repeat
     margin-top 20px
 
+.artigo-textos            
+    h4
+        text-align: left
+    p 
+        text-align: left
+
+@media screen and (max-width: $queries['medium'])
+    .artigo-textos            
+        h4
+            text-align: center
+        p 
+            text-align: center
 
 
 

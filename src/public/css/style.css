@@ -332,7 +332,7 @@ select.form-control {
   padding: 10px 40px;
 }
 .btn border 1px solid $colors['oceano'],
-.btn color: $btn-text,
+.btn color: $colors['oceano'],
 .btn background-color:$btn-bg,
 .btn transition color 1s,
 .btn box-shadow 1s,
@@ -351,9 +351,13 @@ select.form-control {
 }
 .btn-default {
   background-color: transparent;
+  color: #06c47a;
+  border: 1px solid #06c47a;
 }
 .btn-default:hover {
   background-color: transparent;
+  color: #06c47a;
+  border: 1px solid #06c47a;
 }
 .btn-danger,
 .btn-success,
@@ -958,10 +962,18 @@ header {
 .div-curso-back:hover a {
   opacity: 1;
 }
+.artigo-data {
+  margin: 0 auto;
+  padding-left: 20px;
+}
 .artigo-w {
   background-color: #fff;
   transition: 1s;
   color: #000;
+  padding: 0 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d3d3d3;
 }
 .artigo-w .dia {
   font-size: 65px;
@@ -1032,6 +1044,20 @@ img.slick-disabled {
   background-position: 15px center;
   background-repeat: no-repeat;
   margin-top: 20px;
+}
+.artigo-textos h4 {
+  text-align: left;
+}
+.artigo-textos p {
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .artigo-textos h4 {
+    text-align: center;
+  }
+  .artigo-textos p {
+    text-align: center;
+  }
 }
 footer {
   padding: 120px 0 30px 0px;

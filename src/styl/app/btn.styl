@@ -7,7 +7,7 @@ $color-warning = #f0ad4e
 	border-radius $btn-boder-radius
 	padding 10px 40px
 	border 1px solid $colors['oceano']
-	color: $btn-text
+	color: $colors['oceano']
 	background-color:$btn-bg 
 	transition color 1s, box-shadow 1s
 	&:hover
@@ -22,8 +22,12 @@ $color-warning = #f0ad4e
 		color: $btn-text
 .btn-default
 	background-color: $btn-bg
+	color: $btn-text;
+	border 1px solid $btn-text
 	&:hover
 		background-color: $btn-bg
+		color: $btn-text;
+		border 1px solid $btn-text
 .btn-danger
 .btn-success
 .btn-warning
