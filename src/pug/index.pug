@@ -23,16 +23,16 @@ block content
                         .arrowsPlace
 
                     .row.cursos-todos#cursos-todos
-                        each i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                        each i in [{textO: 'Acelera ', text: 'Como impulsionar o crescimento da sua carreira', img: "img/home/ewp.png", link: '#'}, {textO: 'Financial Freedom Strategies ', text: 'Como criar riqueza em qualquer negócio', img: "img/home/ewp.png", link: '#'}, {textO: 'Enlightened Warrior Power ', text: 'Como acessar o seu verdadeiro poder',  img: "img/home/ewp.png", link: '#'}, {textO: 'Acelera ', text: '', img: "img/home/ewp.png", link: '#'}, {textO: 'Acelera ', text: '' , img: "img/home/ewp.png", link: '#'}, 6, 7, 8, 9, 10, 11]
                             .col-xs-6.col-sm-4.col-md-3
                                 .curso
-                                    .div-curso-back.text-center(style="background-image:url(img/home/ewp.png)")
-                                        a(href="#") 
-                                            span Saiba mais
-                                    .div-curso-title.pd-20
+                                    .div-curso-back.text-center(style="background-image:url(" + i.img  +")")
+                                        a(href=i.link) 
+                                            span Leia mais
+                                    .div-curso-title.pd-20.same-size
                                         h4.text-center
-                                            span.text-oceano Acelera | 
-                                            | Como impulsionar o crescimento da sua carreira
+                                            span.text-oceano #{i.textO} | 
+                                            | #{i.text}
                                     .div.curso-data
                                         .line-data.clearfix
                                             .block
@@ -45,12 +45,23 @@ block content
     section#registrar.section(style="background-image:url(img/img-meio.png)")
         .container
             .row
-                h3.bold.line  Outros cursos
+                .col-md-6
+                    .register-texto
+                        h4.bold.text-inverse Receba promoções, ofertas e conteúdo exclusivo.
+                        h3.bold REGISTRAR AGORA
+                .col-md-6
+                    .form-index
+                        h4.text-center.bold.text-oceano.mg-40-top REGISTRAR
+                        .line-regiter
+                        .form-group
+                            input.form-control.input-lg.mg-40-top.input-lg-register(type="text", placeholder="Nome")
+                            input.form-control.input-lg.mg-20-top.input-lg-register(type="text", placeholder="e-mail")
+                            button.bg-oceano.btn-block.mg-40-top.input-lg.text-overflow(type="submit") QUERO RECEBER O CONTEÚDO EXCLUSIVO
     section#artigos.section
         .container
             .row
-                h3.bold.line  ÚLTIMOS ARTIGOS
-                each i in [1, 2, 3, 4]
+                h3.bold.line.mg-80-bottom  ÚLTIMOS ARTIGOS
+                each i in [1, 2, 3]
                     // artigo
                     .col-xs-12.artigo-w
                         .row
@@ -59,15 +70,15 @@ block content
 
                             .col-md-8.col-sm-8.col-sm-pull-4
                                 .row
-                                    .col-md-2
+                                    .col-xs-4.col-md-2
                                         .artigo-data
                                             h4.text-oceano 
                                                 span.dia 15 <br>
                                                 span OUT
-                                    .col-md-10.artigo-textos
-                                        h4 Lorem ipsum dolor sit amet
-                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam...
-                                        p
+                                    .col-xs-8.col-md-10.artigo-textos
+                                        h4.text-left Lorem ipsum dolor sit amet
+                                        p.text-left Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam...
+                                        p.text-left
                                             a.btn.btn-default Saiba Mais
 
 

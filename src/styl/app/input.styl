@@ -1,9 +1,9 @@
 /** 
 Definir as principais cores para os inputs
 */
-$border-color = lightgray
-$border-color-focus = orange
-$border-radius = 4px
+$border-color = transparent
+$border-color-focus =$colors['oceano']
+$border-radius = 0px
 
 
 input
@@ -13,8 +13,10 @@ input.form-control
 select.form-control
 textarea.form-control
     border-radius: $border-radius
-    border: 2px solid $border-color
+    border: 1px solid $border-color
     color: $colors['black']
+    text-align: center
+    background-color: #f8f8f8
     &:focus // inputs selecionados
       border: 2px solid $border-color-focus
     &[disabled]
@@ -49,8 +51,9 @@ select.form-control
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-
-
+.input-lg-register
+  font-size: 14px
+  height: 53px
 select
 select.form-control
   background-image: url(http://www.pngmart.com/files/3/Down-Arrow-PNG-Clipart.png)

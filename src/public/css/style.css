@@ -44,6 +44,11 @@ html {
 .banners {
   padding: 0;
 }
+.text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 div.laptop-wrapper {
   position: relative;
   padding-top: 25px;
@@ -273,9 +278,11 @@ textarea,
 input.form-control,
 select.form-control,
 textarea.form-control {
-  border-radius: 4px;
-  border: 2px solid #d3d3d3;
+  border-radius: 0px;
+  border: 1px solid transparent;
   color: #333;
+  text-align: center;
+  background-color: #f8f8f8;
 }
 input:focus,
 select:focus,
@@ -283,7 +290,7 @@ textarea:focus,
 input.form-control:focus,
 select.form-control:focus,
 textarea.form-control:focus {
-  border: 2px solid #ffa500;
+  border: 2px solid #06c47a;
 }
 input[disabled],
 select[disabled],
@@ -320,12 +327,20 @@ select.form-control {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+.input-lg-register {
+  font-size: 14px;
+  height: 53px;
+}
 select,
 select.form-control {
   background-image: url("http://www.pngmart.com/files/3/Down-Arrow-PNG-Clipart.png");
   background-position: calc(100% - 20px) 1em;
   background-size: 15px;
   background-repeat: no-repeat;
+}
+button {
+  border-radius: 0;
+  border: 0;
 }
 .btn {
   border-radius: 3px;
@@ -342,7 +357,7 @@ select.form-control {
   box-shadow: 2px 0px 8px #9e9c9c;
 }
 .btn:focus {
-  background-color: transparent;
+  background-color: #06c47a;
   color: #06c47a;
 }
 .btn:active {
@@ -975,6 +990,12 @@ header {
   padding-bottom: 30px;
   border-bottom: 1px solid #d3d3d3;
 }
+.artigo-w:first-child {
+  margin-top: 30px;
+}
+.artigo-w:not(:last-child) {
+  margin-bottom: 30px;
+}
 .artigo-w .dia {
   font-size: 65px;
 }
@@ -1012,6 +1033,40 @@ header {
   margin-top: -1px;
   background-color: #06c47a;
 }
+.line-regiter {
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  margin: auto;
+}
+#registrar {
+  padding: 120px 0;
+}
+.register-texto {
+  margin-top: 80px;
+}
+.form-index {
+  width: 100%;
+  margin: auto;
+  max-width: 450px;
+  padding: 5px 20px;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+.form-index .form-group {
+  max-width: 380px;
+  margin: auto;
+}
+.form-index button.bg-oceano {
+  color: #fff;
+  font-size: 13px;
+}
+.form-index button.input-lg {
+  border-radius: 0;
+}
+.form-index > input {
+  margin-top: 20px;
+}
 img.slick-disabled {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -1045,6 +1100,9 @@ img.slick-disabled {
   background-repeat: no-repeat;
   margin-top: 20px;
 }
+.artigo-textos {
+  padding-left: 80px;
+}
 .artigo-textos h4 {
   text-align: left;
 }
@@ -1052,11 +1110,29 @@ img.slick-disabled {
   text-align: left;
 }
 @media screen and (max-width: 768px) {
+  #registrar {
+    padding: 60px 0;
+  }
+  .register-texto {
+    margin-top: 40px;
+  }
+  .artigo-w .dia {
+    font-size: 45px;
+  }
+  .artigo-textos {
+    padding-left: 20px;
+  }
   .artigo-textos h4 {
-    text-align: center;
+    text-align: left;
   }
   .artigo-textos p {
-    text-align: center;
+    text-align: left;
+  }
+  .line {
+    position: relative;
+  }
+  .line::after {
+    display: none;
   }
 }
 footer {
@@ -1075,7 +1151,7 @@ footer .copyright img {
 footer .rede-sociais {
   text-align: center;
 }
-footer .rede-sociais img:nth-child(2) {
+footer .rede-sociais a:nth-child(2) {
   margin: 0 10px;
 }
 footer .contato {
@@ -1160,6 +1236,11 @@ footer .contato {
   }
   .menu {
     display: none;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  .selector {
+    color: #f00;
   }
 }
 

@@ -65,6 +65,10 @@
     padding-top 30px
     padding-bottom: 30px
     border-bottom 1px solid lightgray
+    &:first-child
+        margin-top: 30px
+    &:not(:last-child)
+        margin-bottom: 30px
     .dia 
         font-size: 65px
     &:hover
@@ -99,8 +103,35 @@
         margin-top: -1px
         background-color: $colors['oceano']
 
-//
 
+.line-regiter
+    width: 40px
+    height 1px
+    background-color: black
+    margin: auto
+
+#registrar
+    padding 120px 0
+.register-texto
+    margin-top: 80px
+.form-index
+    width: 100%
+    margin auto
+    max-width 450px
+    padding 5px 20px
+    padding-bottom: 40px
+    background-color: white
+    .form-group
+        max-width 380px;
+        margin: auto
+    button.bg-oceano
+        color: white
+        font-size: 13px
+    button.input-lg
+        border-radius: 0
+    & > input 
+        margin-top: 20px
+        
 img.slick-disabled
     filter: grayscale(100%);
 
@@ -133,19 +164,31 @@ img.slick-disabled
     background-repeat: no-repeat
     margin-top 20px
 
-.artigo-textos            
+.artigo-textos
+    padding-left: 80px            
     h4
         text-align: left
     p 
         text-align: left
 
 @media screen and (max-width: $queries['medium'])
-    .artigo-textos            
+    #registrar
+        padding 60px 0
+    .register-texto
+        margin-top: 40px
+    .artigo-w
+        .dia 
+            font-size: 45px
+    .artigo-textos
+        padding-left: 20px              
         h4
-            text-align: center
+            text-align: left
         p 
-            text-align: center
-
+            text-align: left
+    .line
+        position: relative
+        &::after
+            display none
 
 
         

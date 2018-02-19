@@ -74,7 +74,11 @@
 	  });
 
 	  window.addEventListener('load', function(){
-		menuHeight()
+		menuHeight();
+		
+			//mesmo tamanho
+			$('.same-size').height( $('.same-size').height() );
+
 	  });
 	  window.addEventListener('resize', function(){
 		menuHeight()
