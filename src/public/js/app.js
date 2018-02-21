@@ -96,6 +96,9 @@
 			else if(path === "/contato.html"){
 				$( "#desk-nav .nav-item:contains('CONTATO')" ).addClass('ativo');
 			}
+			else if(path === "/quem-somos.html"){
+				$( "#desk-nav .nav-item:contains('QUEM SOMOS')" ).addClass('ativo');
+			}
 		}
 
 	  window.addEventListener('load', function(){
