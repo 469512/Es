@@ -27,9 +27,9 @@ html(lang="pt")
                             .row
                                 nav
                                     ul#desk-nav 
-                                        each item in ['QUEM SOMOS', 'PALESTRANTES', 'BLOG', 'DEPOIMENTOS', 'AGENDA', 'QUERO SER UM AFILIADO', 'ÁREA DO CLIENTE', 'PERGUNTAS FREQUENTES', 'COACH ES', 'CONTATO']
+                                        each item in [ {name: 'QUEM SOMOS', link:'#'}, {name: 'PALESTRANTES', link:'#'},{name:'BLOG', link:'#'} ,{name:'DEPOIMENTOS', link:'depoimentos.html'} ,{name:'AGENDA', link:'#'} ,{name:'QUERO SER UM AFILIADO', link:'#'} ,{name:'ÁREA DO CLIENTE', link:'#'} ,{name:'PERGUNTAS FREQUENTES', link:'#'} ,{name:'COACH ES', link:'#'} ,{name:'CONTATO', link:'#'}]
                                             li 
-                                                a.nav-item(href="#") #{item}
+                                                a.nav-item(href=item.link) #{item.name}
 
 
         block content

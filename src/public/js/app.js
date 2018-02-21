@@ -71,11 +71,30 @@
 		  // settings: "unslick"
 		  // instead of a settings object
 		]
-	  });
+		});
+		
+		$('#depoimentos').slick({
+			dots: false,
+			infinite: false,//Element
+			appendArrows: $(".arrowsPlace"),
+			speed: 300,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			nextArrow: '<img src="img/seta-cat-right.png" class="seta-right" />"',
+			prevArrow: '<img src="img/seta-cat-left.png" class="seta-left" />"'
+			});
+		
+		function adicionarAtivo(){
+			let path = window.location.pathname;
+			if(path === "/depoimentos.html")
+			{
+				$( "#desk-nav .nav-item:contains('DEPOIMENTOS')" ).addClass('ativo');
+			}
+		}
 
 	  window.addEventListener('load', function(){
-		menuHeight();
-		
+			menuHeight();
+			adicionarAtivo();
 			//mesmo tamanho
 			$('.same-size').height( $('.same-size').height() );
 

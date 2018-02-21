@@ -1,0 +1,41 @@
+extends ./_layouts/es.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+    section#banner-principal
+        .container-fluid
+            .row
+                .col-sm-12.banners#banners
+                    img.img-responsive(src="img/fundo.jpg", alt="Imagem topo")
+    section#depoimentos-wrapper.section
+        .container
+            .row
+                .col-sm-12
+                    h3.bold.line DEPOIMENTOS
+                .col-sm-12
+                    .row
+                        .arrowsPlace
+
+                    .row#depoimentos
+                        .div-encv
+                            each item in ['https://player.vimeo.com/video/228254337?title=0&byline=0&portrait=0', 'https://player.vimeo.com/video/228254337?title=0&byline=0&portrait=0' , 'https://player.vimeo.com/video/228254337?title=0&byline=0&portrait=0', 'https://player.vimeo.com/video/228254337?title=0&byline=0&portrait=0']
+                                .col-sm-6.depoimento
+                                    .embed-responsive.embed-responsive-4by3
+                                        iframe(src=item, frameborder="0")
+                        .div-encv
+                            each item in ['https://player.vimeo.com/video/228254337?title=0&byline=0&portrait=0', 'https://player.vimeo.com/video/228254337?title=0&byline=0&portrait=0' , 'https://player.vimeo.com/video/228254337?title=0&byline=0&portrait=0', 'https://player.vimeo.com/video/228254337?title=0&byline=0&portrait=0']
+                                .col-sm-6.depoimento
+                                    .embed-responsive.embed-responsive-4by3
+                                        iframe(src=item, frameborder="0")
+   
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
