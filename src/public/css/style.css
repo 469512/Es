@@ -1157,6 +1157,18 @@ img.slick-disabled {
     display: none;
   }
 }
+.ir-topo {
+  width: 50px;
+  height: 50px;
+  background-color: #06c47a;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.seta {
+  padding-top: 10px;
+  padding-left: 5px;
+}
 footer {
   padding: 120px 0 30px 0px;
 }
