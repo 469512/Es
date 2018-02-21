@@ -93,6 +93,9 @@
 			else if(path === "/palestrantes.html"){
 				$( "#desk-nav .nav-item:contains('PALESTRANTES')" ).addClass('ativo');
 			}
+			else if(path === "/contato.html"){
+				$( "#desk-nav .nav-item:contains('CONTATO')" ).addClass('ativo');
+			}
 		}
 
 	  window.addEventListener('load', function(){

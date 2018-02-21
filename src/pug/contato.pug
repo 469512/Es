@@ -1,0 +1,75 @@
+extends ./_layouts/es.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+    section#banner-principal(style="background-image: url(img/fundo.jpg)")
+        .container
+            .row
+                .col-sm-12.banners.depoimento-topo
+                    h4.titulo-topo.text-inverse.text-inverse Depoimentos
+                    h3.bold.text-oceano.text-uppercase Conheça algumas <br>
+                                | das histórias <br>
+                                | que nos inspiram <br>
+                                | todos os dias. <br>
+
+    section#depoimentos-wrapper.section
+        .container
+            .row
+                .col-sm-6
+                    h3.bold.line ENTRE EM CONTATO
+                    .div-telefones.pd-40-top
+                        h5 Telefone:
+                        p.contato (11) 3522-1873
+                        hr
+                        h5 Telefone:
+                        p.contato contato@experienciadesucesso.com.br
+                        hr
+                        h5 Telefone:
+                        p.contato Avenida Angélica, 2071 | 1º Andar | Santa Cecília | São Paulo
+                                 | Horário: Seg a Sex das 9h às 18h
+
+
+                .col-sm-6
+                    h3.bold.line ENVIE UM E-MAIL
+                    form.pd-40-top
+                        .form-contato.row
+                            .col-sm-12
+                                input(type="email", class="form-control input-lg", placeholder="Email")
+                        .form-contato.row
+                            .col-sm-6
+                                input(type="text", class="form-control input-lg", placeholder="CPF")
+                            .col-sm-6
+                                input(type="email", class="form-control input-lg", placeholder="Email")
+                        .form-contato.row
+                            .col-sm-6
+                                input(type="tel", class="form-control input-lg", placeholder="Telefone")
+                            .col-sm-6
+                                select(type="email", class="form-control input-lg")
+                                    option Assunto
+                                    option 2
+                                    option 3
+                        .form-contato.row
+                            .col-sm-12
+                                textarea.form-control(name="", cols="30", rows="10", placeholder="Mensagem")
+                        .form-contato.row
+                            .col-sm-12
+                                button.btn.bg-oceano Enviar
+
+
+    .container-fluid.pd-80-top
+        .row
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4944806194335!2d-46.66204838447864!3d-23.550677784688325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5831c5c402eb%3A0xcfe09d902e792393!2sAv.+Ang%C3%A9lica%2C+2071+-+Santa+Cecilia%2C+S%C3%A3o+Paulo+-+SP%2C+01227-200!5e0!3m2!1spt-BR!2sbr!4v1519224854084", width="100%", height="450", frameborder="0", style="border:0", allowfullscreen)
+
+
+   
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
