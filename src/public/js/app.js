@@ -73,7 +73,7 @@
 		]
 		});
 		
-		$('#depoimentos').slick({
+		$('#carroucel').slick({
 			dots: false,
 			infinite: false,//Element
 			appendArrows: $(".arrowsPlace"),

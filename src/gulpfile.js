@@ -7,6 +7,7 @@ var pug 		= require( 'gulp-pug' );
 var browserSync	= require('browser-sync').create();
 
 
+
 var config = { 
 	
 	// arquivos que o gulp espera por moficação
