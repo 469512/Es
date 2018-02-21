@@ -1101,6 +1101,12 @@ img.slick-disabled {
 .titulo-topo {
   margin-top: 120px;
 }
+.palestrante-texto {
+  padding: 80px 50px 0px 30px;
+}
+.palestrante-img {
+  margin-top: 30px;
+}
 .icon-data {
   background-image: url("../img/icone.jpg");
   background-position: 15px center;
@@ -1117,6 +1123,9 @@ img.slick-disabled {
   text-align: left;
 }
 @media screen and (max-width: 768px) {
+  .palestrante-texto {
+    padding: 20px 20px 0px 30px;
+  }
   .depoimento-topo {
     padding: 50px 0 50px 10px;
   }

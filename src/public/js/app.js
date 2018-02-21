@@ -90,6 +90,9 @@
 			{
 				$( "#desk-nav .nav-item:contains('DEPOIMENTOS')" ).addClass('ativo');
 			}
+			else if(path === "/palestrantes.html"){
+				$( "#desk-nav .nav-item:contains('PALESTRANTES')" ).addClass('ativo');
+			}
 		}
 
 	  window.addEventListener('load', function(){
