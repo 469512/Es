@@ -96,6 +96,9 @@
 			else if(path === "/contato.html"){
 				$( "#desk-nav .nav-item:contains('CONTATO')" ).addClass('ativo');
 			}
+			else if(path === "/quem-somos.html"){
+				$( "#desk-nav .nav-item:contains('QUEM SOMOS')" ).addClass('ativo');
+			}
 		}
 
 	  window.addEventListener('load', function(){
@@ -103,6 +106,7 @@
 			adicionarAtivo();
 			//mesmo tamanho
 			$('.same-size').height( $('.same-size').height() );
+			$("#loader").hide(500)
 
 	  });
 	  window.addEventListener('resize', function(){

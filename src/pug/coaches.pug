@@ -1,0 +1,54 @@
+extends ./_layouts/es.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+    section#banner-principal(style="background-image: url(https://s3-sa-east-1.amazonaws.com/happybiz-web/Experiencia-De-Sucesso/novo-site/quem-somos/img-topo.png)")
+        .container
+            .row
+                .col-sm-12.banners.depoimento-topo
+                    h4.titulo-topo.text-inverse.text-inverse Quem somos
+                    h3.bold.text-oceano.text-uppercase PRÍNCIPIOS <br>
+                                |  DO MUNDO <br>
+                                | INTERIOR  <br>
+                                | PARA SUCESSO <br>
+                                | NO MUNDO <br>
+                                | EXTERIOR.<br>
+
+    section#depoimentos-wrapper.section
+        .container
+            .row
+                .col-sm-12
+                    .row.text-center.light
+                        h6 Engrandecendo pessoas
+                        p O verdadeiro conceito de educação está no Brasil para proporcionar verdadeiras experiências de aprendizado nunca antes vistas no país. 
+                            |Partindo desse mesmo conceito, surgiu uma empresa estruturada com o objetivo de transformar e colaborar com o crescimento de pessoas 
+                            |e organizações, possibilitando um crescimento estrondoso... uma verdadeira mudança de nível.
+                        
+                        h6 Uma empresa chamada: Experiência de Sucesso
+                        p Referência e pioneirismo. Estas são as duas palavras que sustentam a existência da empresa. Fundada em Janeiro de 2015 por Leandro 
+                            |Marcondes e Danile Granato, a Experiência de Sucesso se tornou representante oficial da Success Resources e trouxe pela primeira 
+                            |vez ao Brasil os treinamentos baseados em um conceito de vivência, os eventos são um sucesso de execução e vendas e proporcionam 
+                            |a milhares de brasileiros, uma experiência única e apaixonante. Tornando-se a primeira empresa a acreditar no verdadeiro propósito 
+                            |da educação, a Experiência de Sucesso foi a responsável pela criação de um novo mercado educacional e de treinamentos no país. 
+                            |Possibilitamos uma quebra de paradigmas.
+                        
+                        h6 Realizações
+                        p Com pouco mais de dois anos de operação, a Experiência de Sucesso se tornou referência entre as grandes empresas do ramo por trazer ao 
+                            |país palestrantes e treinadores internacionais renomados, como Jordan Belfort, que inspirou o filme O Lobo de Wall Street, Nick Vujicic, 
+                            |autor de best seller e Doug Nelson, autor do livro Pegue Fogo. Entre os principais treinamentos que a empresa tem em seu portfólio estão: 
+                            |Millionaire Mind Intensive; Mission to Millions; Guerrilla Business Intensive; Train the Trainer; Enlightened Warrior Power e Financial 
+                            |Freedom Strategies.
+
+
+   
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
