@@ -99,6 +99,9 @@
 			else if(path === "/quem-somos.html"){
 				$( "#desk-nav .nav-item:contains('QUEM SOMOS')" ).addClass('ativo');
 			}
+			else if(path === "/coaches.html"){
+				$( "#desk-nav .nav-item:contains('COACHES')" ).addClass('ativo');
+			}
 		}
 
 	  window.addEventListener('load', function(){
@@ -106,7 +109,7 @@
 			adicionarAtivo();
 			//mesmo tamanho
 			$('.same-size').height( $('.same-size').height() );
-			$("#loader").hide(500)
+			$("#loader").fadeOut(500);
 
 	  });
 	  window.addEventListener('resize', function(){

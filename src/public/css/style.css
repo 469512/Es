@@ -946,7 +946,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  background-color: rgba(6,196,122,0.9);
+  background-color: #06c47a;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
