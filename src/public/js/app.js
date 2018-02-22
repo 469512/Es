@@ -106,6 +106,7 @@
 			adicionarAtivo();
 			//mesmo tamanho
 			$('.same-size').height( $('.same-size').height() );
+			$("#loader").hide(500)
 
 	  });
 	  window.addEventListener('resize', function(){
