@@ -1166,6 +1166,11 @@ img.slick-disabled {
 .artigo-textos p {
   text-align: left;
 }
+.linha {
+  width: 40px;
+  border: 1px solid #000;
+  margin: auto;
+}
 .contato {
   color: #9e9c9c;
   font-weight: 100;
