@@ -71,16 +71,36 @@ div.laptop-wrapper iframe {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .display-Flex .flex-item {
   padding: 40px;
   text-align: center;
+  width: 30%;
 }
 .borda {
   border: 1px solid #c2c2c2;
+  margin-bottom: 20px;
 }
 .icone-verde {
-  margin-top: -50px;
+  margin-top: -100px;
+}
+@media screen and (max-width: 768px) {
+  .display-Flex {
+    margin-top: 40px;
+  }
+  .display-Flex .flex-item {
+    width: 100%;
+  }
+  .display-Flex .flex-item:nth-child(2) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 @font-face {
   font-family: 'gotham';
