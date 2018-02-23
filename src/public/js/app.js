@@ -104,6 +104,18 @@
 			}
 		}
 
+		function mostrarIrTopo(e){
+			console.log(e.currentTarget.scrollY);
+			let btn = $('#ir-topo');
+			posY = e.currentTarget.scrollY
+			if(posY > 800){
+				$(btn).fadeIn(200);
+			}
+			else{
+				$(btn).fadeOut(200);
+			}
+		}
+
 	  window.addEventListener('load', function(){
 			menuHeight();
 			adicionarAtivo();
@@ -112,7 +124,10 @@
 			$("#loader").fadeOut(500);
 
 	  });
-	  window.addEventListener('resize', function(){
-		menuHeight()
+	  window.addEventListener('scroll', function(e){
+			mostrarIrTopo(e);
+		});
+		window.addEventListener('resize', function(){
+			menuHeight()
 	  });
 })($)

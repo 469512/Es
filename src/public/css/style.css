@@ -1256,6 +1256,7 @@ img.slick-disabled {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  cursor: pointer;
 }
 .seta {
   padding-top: 10px;
