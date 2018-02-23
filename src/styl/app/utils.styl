@@ -38,13 +38,26 @@ div.laptop-wrapper iframe {
 .display-Flex
     display: flex
     width: 100%
+    justify-content: space-between
+    margin-top: 40px
+    flex-wrap: wrap
     .flex-item
         padding: 40px
         text-align: center
+        width: 30%
 
 .borda
     border: 1px solid #c2c2c2
+    margin-bottom: 20px
 
 .icone-verde
-    margin-top: -50px
-    
+    margin-top: -100px
+
+@media screen and (max-width: $queries['medium'])
+    .display-Flex
+        margin-top: 40px
+        .flex-item
+            width: 100%
+            &:nth-child(2)
+                margin-top: 100px
+                margin-bottom: 100px
