@@ -253,6 +253,12 @@ h6 {
 .bg-fundo {
   background-color: #ebebeb;
 }
+.bg-verde-es {
+  background-color: #598f3f;
+}
+.bg-amarelo {
+  background-color: #e1b21a;
+}
 .text-black {
   color: #333;
 }
@@ -268,6 +274,12 @@ footer {
 }
 .text-fundo {
   color: #ebebeb;
+}
+.text-verde-es {
+  color: #598f3f;
+}
+.text-amarelo {
+  color: #e1b21a;
 }
 body {
   font: 100%;
