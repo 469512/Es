@@ -164,6 +164,8 @@ img.slick-disabled
 .titulo-topo
     @extends .light
     margin-top 120px
+.tituto-coach
+    margin-top 220px
 
 .palestrante-texto
     padding 80px 50px 0px 30px
@@ -175,6 +177,11 @@ img.slick-disabled
     background-repeat: no-repeat
     margin-top 20px
 
+.logo-coach
+    position: absolute;
+    margin-top: -20px;
+    max-width 180px
+
 .artigo-textos
     padding-left: 80px            
     h4
@@ -182,11 +189,39 @@ img.slick-disabled
     p 
         text-align: left
 
+.bg-coaches
+    background-size: cover
+
+#contato
+    width auto
+    .bg-tel
+    .bg-email
+    .bg-end
+        background-position: top left
+        background-repeat: no-repeat
+        padding-left: 30px
+    .bg-tel
+        background-image: url(../img/icone-tel.png)
+    .bg-email
+        background-image: url(../img/icone-email.png)
+    .bg-end
+        background-image: url(../img/icone-mapa.png)
+
+
 .linha
     width: 40px
     border: 1px solid #000
     margin: auto
 
+
+.line-couch
+    width: 100px
+    height 3px
+    background-color: $colors['verde-es']
+    margin-bottom: 30px
+
+.couch-left
+    text-align: right 
 .contato
     color: $shadow-color
     font-weight: 100
@@ -203,6 +238,19 @@ img.slick-disabled
         box-shadow: inset 0 0 0 rgba(0,0,0,0.075)
 
 @media screen and (max-width: $queries['medium'])
+    .line-couch
+        display none
+    .couch-left
+        text-align: center
+    .couch-text
+        h5
+            text-align: center
+    .logo-coach
+        position: absolute;
+        margin-top: -20px;
+        max-width 110px
+    .tituto-coach
+        margin-top 80px
     .palestrante-texto
         padding 20px 20px 0px 30px
     .depoimento-topo

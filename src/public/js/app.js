@@ -104,6 +104,8 @@
 			}
 		}
 
+
+
 		function mostrarIrTopo(e){
 			console.log(e.currentTarget.scrollY);
 			let btn = $('#ir-topo');
@@ -129,5 +131,16 @@
 		});
 		window.addEventListener('resize', function(){
 			menuHeight()
-	  });
+		});
+
+
+		$('#ir-topo, topo').on('click', function (event) {
+			var $anchor = $(this);
+
+			$('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top }, 1000, 'swing');
+
+			// Outras AnimaÃ§Ãµes
+			// linear, swing, jswing, easeInQuad, easeInCubic, easeInQuart, easeInQuint, easeInSine, easeInExpo, easeInCirc, easeInElastic, easeInBack, easeInBounce, easeOutQuad, easeOutCubic, easeOutQuart, easeOutQuint, easeOutSine, easeOutExpo, easeOutCirc, easeOutElastic, easeOutBack, easeOutBounce, easeInOutQuad, easeInOutCubic, easeInOutQuart, easeInOutQuint, easeInOutSine, easeInOutExpo, easeInOutCirc, easeInOutElastic, easeInOutBack, easeInOutBounce
+
+	});
 })($)

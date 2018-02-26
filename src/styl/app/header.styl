@@ -7,12 +7,18 @@ header
 	z-index: 9999999
 	width 100%
 	top 0
+	&.coaches
+		background-color: alpha($colors['verde-es'], 80%)
+		text-align: right;
 
 .logo-container
 	padding: 15px 0
 
 #topo.redu
 	background-color:alpha(black, 95%);
+#topo.c-reduz
+	background-color:alpha($colors['verde-es'], 100%);
+
 
 footer
 	@extend .text-inverse
@@ -24,7 +30,7 @@ footer
 	height 100%
 	z-index: 99999999
 	display: flex
-	position: absolute
+	position: fixed
 	background-color: alpha($colors['oceano'], 1 );
 	justify-content: center
 	img 
