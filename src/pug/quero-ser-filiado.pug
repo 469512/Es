@@ -1,0 +1,314 @@
+extends ./_layouts/es.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+    section#banner-principal(style="background-image: url(img/img-fale-conosco.png)")
+        .container
+            .row
+                .col-sm-12.banners.depoimento-topo
+                    h4.titulo-topo.text-inverse.text-inverse Fale conosco
+                    h3.bold.text-oceano.text-uppercase ENVIE<br>
+                                                        | UM E-MAIL<br>
+                                                        | OU LIGUE<br>
+                                                        | PARA NÓS!<br>
+
+
+    section#contato.section
+        .container
+            .row
+                .col-sm-12
+                    h3.bold.line DADOS CADASTRAIS - PESSOA FÍSICA
+                    form.pd-40-top
+                        .form-contato.row
+                            .col-sm-6
+                                input(type="text", class="form-control input-lg", placeholder="CPF")
+                            .col-sm-6
+                                input(type="text", class="form-control input-lg", placeholder="Nome")
+                        .form-contato.row
+                            .col-sm-3
+                                input(type="text", class="form-control input-lg", placeholder="Data de nascimento")
+                            .col-sm-3
+                                select(type="text", class="form-control input-lg")
+                                    option Sexo
+                                    option Masculino
+                                    option Feminino
+                            .col-sm-3
+                                input(type="email", class="form-control input-lg", placeholder="Email")                        
+                            .col-sm-3
+                                input(type="email", class="form-control input-lg", placeholder="Celular 1")                        
+            .row.mg-60-top
+                .col-sm-12
+                    h3.bold.line DADOS CADASTRAIS - PESSOA JURÍDICA
+                    form.pd-40-top
+                        .form-contato.row
+                            .col-sm-4
+                                input(type="text", class="form-control input-lg", placeholder="CNPJ")
+                            .col-sm-4
+                                input(type="text", class="form-control input-lg", placeholder="IE")
+                            .col-sm-4
+                                input(type="text", class="form-control input-lg", placeholder="Razão Social")
+                        .form-contato.row
+                            .col-sm-4
+                                input(type="text", class="form-control input-lg", placeholder="CEP")
+                            .col-sm-4
+                                input(type="text", class="form-control input-lg", placeholder="Endereço")
+                            .col-sm-4
+                                input(type="email", class="form-control input-lg", placeholder="Bairro")                                              
+                        .form-contato.row
+                            .col-sm-4
+                                input(type="text", class="form-control input-lg", placeholder="Número")
+                            .col-sm-4
+                                input(type="text", class="form-control input-lg", placeholder="Cidade")
+                            .col-sm-4
+                                input(type="email", class="form-control input-lg", placeholder="Estado")                       
+                        .form-contato.row.text-center.pd-20-top
+                            .col-sm-12
+                                input.condicoes(type="checkbox")
+                                label(for="condicoes" data-toggle="modal" data-target="#myModal") Aceito os termos e Condições
+                        //Modal
+                        #myModal.modal.fade( role="dialog")
+                            .modal-dialog
+                            //Modal content
+                            .modal-content.col-sm-6.col-sm-offset-3
+                                    .modal-header
+                                        button(type="button" class="close" data-dismiss="modal") &times;
+                                    .modal-body.fontes-modal
+                                        p A ACEITAÇÃO DO PRESENTE INSTRUMENTO É ABSOLUTAMENTE INDISPENSÁVEL À UTILIZAÇÃO DA PLATAFORMA EXPERIÊNCIA DE SUCESSO E TODAS AS SUAS FUNCIONALIDADES AO MANIFESTAR SUA ACEITAÇÃO O USUÁRIO DECLARA EXPRESSAMENTE SUA CONCORDÂNCIA E SE OBRIGA A CUMPRIR INCONDICIONALMENTE O CONTRATO PARTICULAR DE ADESÃO AO PROGRAMA DE AFILIADOS EXPERIÊNCIA DE SUCESSO, ABAIXO TRANSCRITO, EM TODAS AS SUAS CLÁUSULAS E CONDIÇÕES.
+                                        h5 CONTRATO PARTICULAR DE ADESÃO AO PROGRAMA DE AFILIADOS EXPERIÊNCIA DE SUCESSO
+                                        h6 1. Partes
+                                        p De um lado, EXPERIÊNCIA DE SUCESSO ASSESSORIA EM MARKETING LTDA, pessoa jurídica de direito privado, inscrita no CNPJ/MF sob o nº 23.153.886/0001-09, sediada em Barueri/SP, na Calçada das Margaridas, 163, sala 02, CEP: 06453-038 única e exclusiva proprietária do domínio http://www.experienciadesucesso.com.br e http://www.experienciadesucesso.com.vc doravante denominada simplesmente EXPERIÊNCIA DE SUCESSO.
+                                        p De outro lado, A PESSOA FÍSICA E JURÍDICA identificada no Cadastro realizado pela plataforma EXPERIÊNCIA DE SUCESSO, que deu o aceite eletrônico, tornando-se assim USUÁRIO da Experiência DE SUCESSO, declarando, ainda, ter lido e concordado com todos os termos do presente contrato, obrigando-se a cumpri-lo e respeitá-lo.
+                                        
+                                        h6 2. Termos e expressões
+                                        p 2.1. Para fins deste instrumento, são adotados os conceitos e termos grafados em maiúsculas que terão o seguinte significado:
+                                        p a) USUÁRIO: é toda pessoa física ou jurídica que se cadastrar na EXPERIÊNCIA DE SUCESSO, aceitar os termos e condições deste contrato e acessar suas funcionalidades e ferramentas por meio de seu login e senha.
+                                        p b) AFIL/0IADO: é o USUÁRIO da EXPERIÊNCIA DE SUCESSO que utilizar as ferramentas de divulgação de PRODUTOS, com o objetivo de ser remunerado sempre que essa divulgação gerar uma COMERCIALIZAÇÃO.
+                                        p c) COMERCIALIZAÇÃO: é toda operação que implique em pagamento pela transferência de propriedade, licenciamento, cessão, disponibilização, liberação de acesso, prestação de serviço ou entrega por meio físico ou digital de um PRODUTO.
+                                        p d) COMPRADOR: é toda pessoa física ou jurídica, USUÁRIO ou não da Experiência DE SUCESSO que adquirir um PRODUTO.
+                                        p e) PRODUTO: é todo bem ou serviço corpóreo, incorpóreo em qualquer formato, inclusive digital, que possa ser objeto de transferência de propriedade, permissão de uso, divulgação ou qualquer forma de cessão e que tenha valor econômico;
+                                        p f) O Portal EXPERIÊNCIA DE SUCESSO tem por objetivo ofertar um espaço virtual de ofertas de Cursos, Seminários e Workshops, ofereçam seus produtos e serviços uns aos outros, atuando tão somente como um instrumento para a negociação, não intervindo na sua concretização de forma alguma.
+                                        p h) GARANTIA: Período de 7 (sete) dias durante o qual o COMPRADOR pode manifestar sua intenção de desistir da compra do PRODUTO, recebendo em devolução os valores pagos.
+
+                                        h6 3. Objeto
+                                        p 3.1. O presente contrato tem por objeto dispor as regras e condições que regerão a utilização pelos Afiliados da plataforma EXPERIÊNCIA DE SUCESSO e todas as suas funcionalidades.
+                                        p 3.2. A EXPERIÊNCIA DE SUCESSO disponibiliza em sua plataforma, ferramentas para pagamento e recebimento pela COMERCIALIZAÇÃO e remuneração dos USUÁRIOS. Essas ferramentas permitem que sejam gerados créditos para os usuários decorrentes da COMERCIALIZAÇÃO de PRODUTOS os quais serão transferidos, conforme as regras estabelecidas pela Experiência de Sucesso para as contas específicas dos usuários em instituições financeiras ou outros meios de pagamento desde que cadastradas e de titularidade dos próprios USUÁRIOS.
+
+                                        h6 4. Preço
+                                        p 4.1. A utilização da plataforma EXPERIÊNCIA DE SUCESSO e todas as suas funcionalidades será objeto de remuneração pelo USUÁRIO segundo os valores previamente estabelecidos pela Experiência de Sucesso e divulgados em sua plataforma.
+
+                                        h6 5. Cadastro
+                                        p 5.1. A utilização da plataforma EXPERIÊNCIA DE SUCESSO somente poderá ser contratada por pessoa habilitada à prática de todos os atos da vida civil (maiores de 18 anos), sendo vedado o cadastro e utilização por pessoas menores de idade, sob pena de responsabilização civil e/ou criminal de seus responsáveis legais.
+                                        p 5.2. Para utilização da Experiência DE SUCESSO, o USUÁRIO obriga-se a preencher adequadamente e com informações corretas todos os dados solicitados pela Experiência de Sucesso na página de cadastramento do site.
+                                        p 5.3. Após o preenchimento do cadastro do USUÁRIO no site da Experiência DE SUCESSO, este procederá à conferência e validação das informações, para fins de aprovação ou não do cadastro.
+                                        p 5.4. A EXPERIÊNCIA DE SUCESSO reserva-se o direito de não aprovar o cadastro do USUÁRIO no Programa, se considerar que este utilizará a plataforma em desacordo com as condições previstas neste contrato.
+                                        p 5.5. A EXPERIÊNCIA DE SUCESSO poderá utilizar todos os meios válidos e possíveis para identificar seus usuários, bem como de solicitar dados adicionais e documentos que estime serem pertinentes para conferir os Dados Pessoais informados. A EXPERIÊNCIA DE SUCESSO poderá, a qualquer momento, solicitar ao USUÁRIO documentos adicionais que comprovem os dados informados, e, caso constate haver dados incorretos ou inverídicos, ou ainda caso o USUÁRIO se furte ou negue a enviar os documentos que comprovem os dados requeridos, a Experiência de Sucesso poderá bloquear o cadastro para vendas, suspendê-lo temporariamente ou cancelá-lo definitivamente, sem prejuízo de outras medidas que entender necessárias e oportunas permitidas em lei ou previstas neste instrumento.
+                                        p 5.6. Havendo a aplicação de qualquer das sanções acima referidas, automaticamente serão cancelados os anúncios por ele veiculados, não assistindo ao USUÁRIO, por essa razão, qualquer direito de indenização ou ressarcimento.
+                                        p 5.7. Em nenhuma hipótese será permitida a cessão, venda, aluguel ou outra forma de transferência do cadastro ou conta. Também não se permitirá a manutenção de mais de um cadastro por uma mesma pessoa (física ou jurídica), ou ainda a criação de novos cadastros por pessoas cujos cadastros originais tenham sido cancelados por infrações às políticas da Experiência DE SUCESSO.
+                                        p 5.8. Ao efetuar o cadastro o USUÁRIO deverá informar uma única conta para crédito de seus pagamentos da qual, obrigatoriamente, deverá ser o titular. A conta informada pelo usuário poderá ser mantida em instituições financeiras ou outros sistemas de pagamento desde que aceitos pela Experiência de Sucesso.
+                                        p 5.9. O USUÁRIO é o único responsável pelas informações prestadas sobre a conta que deverá receber seus créditos. a responsabilidade da Experiência DE SUCESSO está limitada a transferir, segundo as regras estabelecidas na Plataforma EXPERIÊNCIA DE SUCESSO os valores devidos aos USUÁRIOS para a conta por ele indicada, sendo certo que a Experiência de Sucesso não responde pelas obrigações que cabem às instituições responsáveis pela referida conta.
+
+                                        h6 6. Conta e Senha
+                                        p 6.1. Ao realizar o cadastro o USUÁRIO deverá atribuir para si um login equivalente a um endereço de e-mail válido e pessoal do USUÁRIO e uma senha que não seja de conhecimento de terceiros. É dever do USUÁRIO: (a) manter o sigilo de sua identificação de conta e senha perante terceiros; (b) atualizar e revisar sua conta frequentemente; e (c) avisar prontamente à Experiência de Sucesso caso ocorra qualquer utilização não autorizada de sua conta ou qualquer quebra de segurança.
+                                        p 6.2. A senha é a assinatura eletrônica do USUÁRIO equivalendo à sua firma para todos os fins legais. Dessa forma, toda vez que o USUÁRIO inserir sua senha no sistema estará declarando expressamente sua obrigação aos termos do documento digital no qual esta está sendo inserida.
+                                        p 6.3. É dever do USUÁRIO guardar sigilo de seus dados na plataforma EXPERIÊNCIA DE SUCESSO e de sua senha, sendo o USUÁRIO o único responsável pelas atividades que forem realizadas por sua conta e senha. A EXPERIÊNCIA DE SUCESSO não será responsável por qualquer perda ou dano resultante do uso indevido da conta e senha ou da falha do USUÁRIO em cumprir com as obrigações aqui previstas.
+                                        p 6.4. Com a aprovação do cadastro e a validação da conta e senha do USUÁRIO pela Experiência de Sucesso será encaminhado um e-mail pela equipe da Experiência DE SUCESSO ao USUÁRIO informando-lhe que sua conta está ativa e pronta para uso.
+
+                                        h6 7. Responsabilidades do USUÁRIO
+                                        p 7.1. O USUÁRIO reconhece e declara:
+                                        p a) que é maior de idade e tem plena capacidade para todos os atos da vida civil;
+                                        p b) que aceita integralmente e se obriga a cumprir as normas deste termo de uso, sujeitando-se às penalidades pelo seu descumprimento;
+                                        p c) que é legítimo titular de todos os direitos sobre os produtos e serviços queeventualmente comercializar pela plataforma EXPERIÊNCIA DE SUCESSO;
+                                        p d) que assume todos os riscos relacionados ou resultantes do seu uso, visualização ou acesso aa Experiência de Sucesso, na máxima extensão permitida pela legislação aplicável;
+                                        p e) que é integralmente responsável pelos produtos que anuncia ou pelas ofertas e compras que realiza;
+                                        p f) que isenta a Experiência de Sucesso, na máxima extensão permitida pela legislação aplicável, de todas e quaisquer garantias, de qualquer natureza, sejam elas expressas ou implícitas;
+                                        p g) que a despeito da Experiência DE SUCESSO empreender o máximo esforço em garantir a prestação de serviços com continuidade segurança, eventualmente, o sistema poderá não estar disponível por motivos técnicos, falhas da internet ou por qualquer outro evento fortuito ou de força maior alheio ao controle da Experiência DE SUCESSO;
+                                        p h) que a Experiência de Sucesso não se responsabiliza pela idoneidade, veracidade ou qualidade dos produtos oferecidos pelos Usuários, bem como pela capacidade para contratar dos USUÁRIOS ou pela veracidade dos dados pessoais por eles inseridos em seus cadastros;
+                                        p i) que a Experiência de Sucesso não será responsável pelo efetivo cumprimento das obrigações assumidas pelos USUÁRIOS;
+                                        p j) que reconhece e concorda que a Experiência de Sucesso não oferece garantias contra chargebacks ou bloqueios de compra/pagamento de qualquer natureza por parte do COMPRADOR e poderá deduzir a qualquer tempo do saldo do USUÁRIO valores referentes a transações reembolsadas ou bloqueadas, ou transações contestadas (chargeback).
+                                        p 7.2. A EXPERIÊNCIA DE SUCESSO recomenda que toda transação seja realizada com cautela e bom senso. O USUÁRIO deverá sopesar os riscos da negociação, levando em consideração que pode estar, eventualmente, lidando com menores de idade ou pessoas valendo-se de falsas identidades.
+                                        p 7.3. É de responsabilidade exclusiva do USUÁRIO a correta utilização de todas as ferramentas e funcionalidades da plataforma EXPERIÊNCIA DE SUCESSO cabendo ao USUÁRIO informar-se adequadamente sobre seu uso. Em caso de dúvidas o USUÁRIO deverá buscar os esclarecimentos necessários pelos meios de comunicação disponibilizados pela Experiência de Sucesso. A EXPERIÊNCIA DE SUCESSO não indenizará o USUÁRIO em virtude de erros de cadastro ou divulgação de produtos que prejudiquem sua comercialização.
+                                        p 7.4. Nos casos em que um ou mais USUÁRIOS ou algum terceiro inicie qualquer tipo de reclamação ou ação legal contra outro ou outros USUÁRIOS, todos os USUÁRIOS envolvidos nas reclamações ou ações eximem de toda responsabilidade EXPERIÊNCIA DE SUCESSO e a seus diretores, gerentes, empregados, agentes, operários, representantes e procuradores.
+
+                                        h6 8. Proibições gerais
+                                        p 8.1. Sem prejuízo das demais vedações previstas no presente instrumento, o USUÁRIO se compromete a não:
+                                        p a) violar o presente termo e as demais regras previstas na legislação aplicável;
+                                        p b) violar ou tentar violar quaisquer medidas de segurança da Experiência DE SUCESSO;
+                                        p c) acessar, tentar acessar ou divulgar qualquer conta ou identificação de terceiros contida na Experiência de Sucesso;
+                                        p d) copiar, modificar, reproduzir, apagar, distribuir, realizar download, armazenar, transmitir, vender, revender, publicar, realizar engenharia reversa ou criar obras derivadas de quaisquer produtos disponibilizados por outros Usuários;
+                                        p e) publicar ou submeter qualquer informação imprecisa, falsa ou incompleta;
+                                        p f) passar-se por outra pessoa ou organização;
+                                        p g) manipular os preços dos produtos anunciados;
+                                        p h) interferir nas transações entre outros usuários;
+                                        p i) agredir, caluniar, injuriar ou difamar outros USUÁRIOS;
+                                        p j) comprar produtos através do próprio de link de AFILIADO;
+                                        p k) usar de SPAM ou qualquer outra prática de divulgação inapropriada, caluniosa ou ilegal para promover qualquer PRODUTO disponível na Experiência de Sucesso;
+                                        p l) usar de meios de divulgação ilegais, ou que causem quaisquer danos a usuários da Experiência DE SUCESSO, a terceiros, ou ao própria Experiência de Sucesso.
+                                        p 8.2. Qualquer conduta contrária ao previsto acima poderá ser punido com a suspensão ou cancelamento do anúncio, ou com a suspensão ou cancelamento do cadastro como USUÁRIO da Experiência DE SUCESSO, sem prejuízo das ações legais que possam ocorrer pela configuração de delitos ou contravenções ou os prejuízos civis que possam causar aos demais USUÁRIOS. Em caso de cancelamento ou suspensão de um cadastro de USUÁRIO o saldo deste USUÁRIO pode inclusive ficar retido.
+
+                                        h6 9. Divulgação de Produtos pelos Afiliados
+                                        p 9.1. O AFILIADO poderá utilizar a Plataforma EXPERIÊNCIA DE SUCESSO para divulgar PRODUTOS de seu interesse, desde que respeitadas todas as disposições deste contrato, em especial as constantes deste capítulo.
+                                        p 9.2. A divulgação consiste na disponibilização pelo AFILIADO de área própria em ambiente virtual que seja de sua titularidade, para que o PRODUTO seja visualizado ou ofertado. Considera-se como ambiente virtual todo aquele atualmente existente na Internet, tais como sites, blogs, páginas em redes sociais, mailings, entre outros, desde que lícitos e em conformidade com as politicas aceitas pela Experiência de Sucesso previstas neste instrumento.
+                                        p 9.3. Para a divulgação de PRODUTOS por intermédio da Plataforma EXPERIÊNCIA DE SUCESSO o AFILIADO deverá:
+                                        p a) inscrever-se como USUÁRIO da Experiência DE SUCESSO cumprindo todas as exigências cadastrais;
+                                        p b) solicitar a afiliação para a divulgação do PRODUTO na área própria da Plataforma EXPERIÊNCIA DE SUCESSO;
+                                        p c) aceitar as condições de afiliação e divulgação, assim como todas as disposições do presente contrato;
+                                        p d) responder exclusivamente pelo cumprimento de suas obrigações legais,notadamente as tributárias.
+                                        p 9.4. A divulgação pelos USUÁRIOS será remunerada pelos PRODUTORES conforme os valores estabelecidos na COMERCIALIZAÇÃO de cada produto. Ao se cadastrar para divulgar determinado produto o AFILIADO tomará conhecimento do valor de venda do PRODUTO e de sua remuneração, a qual será devida apenas quando ocorrer uma COMERCIALIZAÇÃO efetiva com o pagamento incondicional pelo COMPRADOR.
+                                        p 9.5. O AFILIADO tem conhecimento que a simples afiliação ou divulgação do PRODUTO não gera qualquer direito de pagamento em seu favor, uma vez que somente com a COMERCIALIZAÇÃO e o efetivo pagamento do PRODUTO pelo COMPRADOR o valor de sua comissão será devido.
+
+                                        h6 10. Gestão de Pagamento
+                                        p 10.1. A EXPERIÊNCIA DE SUCESSO disponibiliza em sua plataforma ferramentas que permitem o pagamento e recebimento pela COMERCIALIZAÇÃO de PRODUTOS, assim como para remuneração a Afiliados. Os meios de pagamento disponibilizados pela Experiência de Sucesso são os únicos permitidos em sua plataforma. Constitui infração às normas da EXPERIÊNCIA DE SUCESSO a utilização dos meios de pagamento disponibilizados para a realização de atividades diversas das estabelecidas pelo presente contrato.
+                                        p 10.2. O USUÁRIO declara-se ciente de que as ferramentas de pagamento da Experiência DE SUCESSO não são e nem se destinam a ser comparáveis aos serviços financeiros oferecidos por instituições bancárias ou administradoras de cartão de crédito, consistindo apenas em uma forma de facilitação e acompanhamento da realização de transações para pagamentos e recebimentos entre os USUÁRIOS da EXPERIÊNCIA DE SUCESSO,
+                                        p 10.3. Os instrumentos de gestão de pagamentos disponibilizados pela Experiência de Sucesso permitem:
+                                        p a) O pagamento pelos COMPRADORES pela aquisição de CURSOS E TREINAMENTOS disponibilizados na Experiência de Sucesso;
+                                        p b) O recebimento pelos AFILIADOS dos valores relativos à divulgação de PRODUTOS COMERCIALIZADOS.
+                                        p 10.4. Nas compras realizadas na plataforma EXPERIÊNCIA DE SUCESSO, caberá a Experiência de Sucesso:
+                                        p a) o recebimento do preço pago pelo COMPRADOR;
+                                        p b) o pagamento da remuneração estabelecida ao AFILIADO, quando houver;
+                                        p 10.5. Os AFILIADOS concordam que a Experiência de Sucesso divulgará em sua plataforma, em área de acesso restrito apenas às partes envolvidas, os valores referentes aos pagamentos de divulgação e COMERCIALIZAÇÃO de PRODUTOS.
+                                        p 10.6. A EXPERIÊNCIA DE SUCESSO poderá estabelecer, segundo seus critérios, limites para recebimento de créditos em sua plataforma.
+                                        p 10.7. Todas as as operações de COMERCIALIZAÇÃO serão verificadas pelas ferramentas de gestão de risco da EXPERIÊNCIA DE SUCESSO e poderão ser recusadas sempre que houver suspeita de fraude aos meios de pagamento ou infração à lei ou aos termos do presente contrato. Ocorrendo a recusa da operação nenhum pagamento será devido ao USUÁRIO.
+
+                                        h6 11. Contestação de Pagamentos, Reclamações e Disputas
+                                        p 11.1. A EXPERIÊNCIA DE SUCESSO não se responsabiliza por eventuais contestações de COMPRADORES (chargeback), reclamações, disputa e reembolso. Assim sempre que o pagamento pela aquisição de um PRODUTO for por alguma razão frustrado, seja por causas imputadas aos COMPRADORES ou aos PRODUTORES, a Experiência de Sucesso fica autorizado a promover o ressarcimento dos valores pagos aos PRODUTORES e AFILIADOS em decorrência de tal compra cujo pagamento não se confirmou, valor esse que poderá ser deduzido de quaisquer outros créditos dos PRODUTORES e AFILIADOS.
+                                        p 11.2. Em caso de reclamação promovida pelo COMPRADOR, a Experiência de Sucesso comunicará o PRODUTOR para se manifestar em um prazo máximo de 10 (dez) dias. Não havendo resposta do PRODUTOR ou em caso de concordância com o cancelamento da operação, a Experiência de Sucesso promoverá o reembolso integral do valor pago pelo COMPRADOR e promoverá o ressarcimento dos valores pagos aos PRODUOTRES e AFILIADOS pela respectiva operação. Caso o PRODUTOR não concorde com o cancelamento a Experiência de Sucesso buscará a conciliação pelos meios razoavelmente possíveis sempre de forma a atender o desejo das partes.
+                                        p 11.3. Ocorrendo uma disputa entre COMPRADOR e PRODUTOR que não puder ser resolvida pelos meios estabelecidos nesta cláusula, a Experiência de Sucesso poderá promover a consignação judicial dos valores envolvido.
+                                        p 11.4. A conta do USUÁRIO poderá ser suspensa ou terminada, caso apresente comportamento suspeito ou elevado índice de reclamações e/ou contestações
+
+                                        h6 12. Responsabilidades
+                                        p 12.1. O USUÁRIO é o único responsável pelo desenvolvimento, operação e manutenção de seu Espaço Virtual e por todo o conteúdo, informações, imagens e mensagens nele apresentados, eximindo a Experiência de Sucesso de toda e qualquer responsabilidade em relação a tal conteúdo.
+                                        p 12.2. O USUÁRIO é responsável por assegurar que a inserção de qualquer material no seu site não viola ou infringe direitos de terceiros (incluindo, direitos autorais, marcas, e outros direitos de propriedade intelectual e de imagem), e por assegurar que o material colocado no seu site não tenha conteúdo difamatório ou ilegal.
+                                        p 12.3. Por conta do disposto acima, o USUÁRIO assume integral responsabilidade pelos efeitos decorrentes de qualquer alegação de descumprimento legal ou contratual formulada por usuários da Internet ou por quaisquer terceiros, relacionada, direta ou indiretamente, ao site do USUÁRIO e/ou a seus conteúdos, isentando a Experiência de Sucesso de qualquer responsabilidade relativamente a tais relacionamentos e alegações.
+                                        p 12.4. Toda e qualquer reclamação, em procedimento judicial ou extrajudicial apresentada contra a Experiência de Sucesso, sob alegação de violação a quaisquer direitos de terceiros ou infração a qualquer dispositivo legal ou contratual, relacionados direta ou indiretamente ao site do USUÁRIO e/ou a seus conteúdos, será comunicada imediatamente ao USUÁRIO, que concorda, desde já, em assumir os gastos com a defesa da Experiência DE SUCESSO na demanda, ou com a sua denunciação à lide, pela Experiência de Sucesso, na hipótese de o procedimento comportar a modalidade de intervenção, comprometendo-se, desde já, a pagar todas as despesas relativas à demanda, incluindo custas e despesas processuais, bem como as verbas de condenação, assim entendidas, exemplificativamente, as correspondentes a perdas e danos, lucros cessantes, indenizações, sucumbência ou quaisquer outros valores que a Experiência de Sucesso venha a ser condenado a pagar.
+                                        p 12.5. Para permitir um funcionamento adequado das operações, o USUÁRIO deverá se certificar de que os links entre o site do USUÁRIO e o site da Experiência DE SUCESSO estejam devidamente configurados. A EXPERIÊNCIA DE SUCESSO não será responsável por perdas ocorridas em consequência de má formatação dos links ou devido à sua má manutenção.
+                                        p 12.6. A EXPERIÊNCIA DE SUCESSO não se responsabiliza pela entrega dos produtos nos prazos e condições estabelecidas pelo PRODUTOR e, tampouco, pela relação de consumo que se estabelecer, entre o PRODUTOR e o COMPRADOR, em decorrência do acesso feito pelos usuários e visitantes do site do AFILIADO.
+                                        p 12.7. A EXPERIÊNCIA DE SUCESSO não será responsável por interrupções ou erros que ocorram na transmissão de dados via internet.
+                                        
+                                        h6 13. Dos acessos e das vendas dos produtos
+                                        p 13.1. Todas as vendas de Produtos serão efetuadas exclusivamente mediante a utilização da plataforma oferecida pela Experiência de Sucesso. Constitui infração contratual a COMERCIALIZAÇÃO de PRODUTOS pelo PRODUTOR por outros canais concomitantemente aa Experiência de Sucesso.
+                                        p 13.2. A EXPERIÊNCIA DE SUCESSO responsabilizar-se-á pelo cadastro do COMPRADOR, pelo registro da COMERCIALIZAÇÃO, pela cobrança e recebimento do preço, pela disponibilização para download do PRODUTO (desde que em formato digital).
+                                        p 13.3. O próprio PRODUTOR será o responsável pela entrega de produto físico ou prestação de serviços, de forma que não há qualquer responsabilidade da Experiência DE SUCESSO em caso de falha na entrega.
+                                        p 13.4. O AFILIADO será responsável pela atualização da oferta em seu site ou página na internet, sendo igualmente responsável pelas ofertas em desacordo com as promoções, valores dos Produtos ou condições de vendas indicados pelo PRODUTOR, devendo, portanto, arcar com os ônus decorrentes de eventuais divergências.
+                                        p 13.5. O AFILIADO será responsável pelo envio de um Recibo aos produtores para os quais ele indicou novos clientes e recebeu comissões. O recibo poderá ser enviado através da própria plataforma da Experiência DE SUCESSO, sendo esta condição indispensável para realização de saques referentes aos ganhos do AFILIADO.
+
+                                        h6 14. Direto de Propriedade Intelectual
+                                        p 14.1. O conteúdo das informações contidas no site da Experiência DE SUCESSO, bem como sua marca, nome empresarial, nome de domínio, programas, bancos de dados, redes e arquivos são propriedade da Experiência DE SUCESSO e estão protegidos pelas leis e tratados internacionais de direito autoral, marcas, patentes, modelos e desenhos industriais, sendo absolutamente vedada a cópia, distribuição, uso ou publicação, total ou parcialmente, de qualquer material ou parte do site e de todo o conteúdo nele ofertado sem prévia e expressa autorização do titular dos direitos de autor.
+                                        p 14.2. É vedada ao USUÁRIO a transformação ou modificação dos Materiais, obrigandose o USUÁRIO a não promover ou facilitar qualquer desvio de utilização do seu conteúdo, no ambiente de seu site, ou a partir dele quando impossível tal evento sem a participação do controlador do domínio, ou quando simplesmente transmitido tal conteúdo, ou parte dele para terceiros, ou permitida ou facilitada a sua reprodução, vedando-se, assim, qualquer modalidade de utilização não expressamente autorizada, sob pena de incorrer em ilícitos cível e criminal, sem prejuízo da imediata exclusão do USUÁRIO do Programa.
+                                        p 14.3. Faculta-se aa Experiência de Sucesso atualizar ou promover qualquer alteração em seus materiais.
+                                        p 14.4. A EXPERIÊNCIA DE SUCESSO busca assegurar que os produtos anunciados não firam direitos de propriedade intelectual e industrial. Os titulares dos direitos infringidos poderão solicitar a remoção daqueles produtos que entendem violar seus direitos. Suspeitando a Experiência de Sucesso que tenha sido cometida alguma atividade ilícita ou que infrinja os direitos aqui mencionados, alguns dados dos Usuários infratores poderão ser encaminhados aos órgãos responsáveis.
+                                        p 14.5. Encerrado o Programa de Afiliados, ou excluído o AFILIADO por qualquer motivo, obriga-se o AFILIADO a retirar de seu site todos os links e demais Materiais pertencentes à Experiência de Sucesso.
+
+                                        h6 15. Privacidade da Informação
+                                        p 15.1. Toda informação prestada pelo USUÁRIO aa Experiência de Sucesso é armazenada em servidores ou meios magnéticos de alta segurança. A EXPERIÊNCIA DE SUCESSO não fornecerá a terceiros quaisquer dados pessoais, inclusive registros de conexão, e de acesso a aplicações de internet, salvo mediante consentimento livre, expresso e informado ou nas hipóteses previstas em lei, salvo os que forem necessários à execução do objeto deste contrato.
+                                        p 15.2. Em decorrência do objetivo da utilização da plataforma EXPERIÊNCIA DE SUCESSO como instrumento de promoção e divulgação de produtos os USUÁRIOS têm conhecimento e consentem que as informações necessárias para a afiliação da plataforma que permitam a PRODUTORES e AFILIADOS a divulgação e COMERCIALIZAÇÃO de produtos sejam compartilhadas na exata medida do cumprimento do seu objetivo.
+                                        p 15.3. A EXPERIÊNCIA DE SUCESSO tomará todas as medidas possíveis para manter a confidencialidade e a segurança descritas nesta cláusula, porém não responderá por prejuízo que possa ser derivado da violação dessas medidas por parte de terceiros que utilizem as redes públicas ou a internet, subvertendo os sistemas de segurança para acessar as informações de Usuários.
+
+                                        h6 16. Indenização
+                                        p 16.1. O USUÁRIO se obriga a ressarcir a Experiência de Sucesso de todos os gastos que este, suas filiais, empresas controladas ou controladoras, diretores, administradores, colaboradores, prepostos e funcionários, arcarem em decorrência de eventual demanda judicial na qual se discuta a violação, seja por ação ou omissão, do uso do site ou violação ao presente instrumento pelo USUÁRIO, inclusive, mas não se limitando ao valor de eventual condenação, custas e despesas processuais e honorários advocatícios.
+
+                                        h6 17. Redirecionamento
+                                        p 17.1. A EXPERIÊNCIA DE SUCESSO pode Redirecionar (linkar) outros sites da rede, o que não significa que esses sites sejam de propriedade ou operados pela Experiência de Sucesso.
+                                        p 17.2. A EXPERIÊNCIA DE SUCESSO não se responsabiliza pelos materiais, informações ou conteúdo publicados em sites de terceiros, tampouco pela disponibilidade destes sites, competindo ao USUÁRIO utilizar seu próprio discernimento, precaução e senso comum ao acessar sites de terceiros, devendo conferir as políticas de privacidade e os termos de uso aplicáveis.
+
+                                        h6 18. Modificações nos Termos de Uso
+                                        p 18.1. É lícito aa Experiência de Sucesso alterar, a qualquer tempo e sem prévia notificação aos Usuários, as cláusulas e condições previstas neste instrumento, visando o aprimoramento e melhoria dos serviços prestados. O novo Termo com suas respectivas alterações entrará em vigor 10 (dez) dias após publicado no site, devendo o USUÁRIO, no prazo de 05 (cinco) dias contados a partir da publicação da entrada em vigor das modificações, notificar a Experiência de Sucesso, via e-mail, caso não concorde com as alterações efetuadas, hipótese em que o vínculo contratual deixará de existir, desde que não haja créditos ou débitos em aberto.
+                                        p 18.2. Não havendo manifestação no prazo estipulado, entender-se-á que o USUÁRIO aceitou tacitamente os novos Termos de Uso, submetendo-se a eles.
+
+                                        h6 19. Falhas no Sistema
+                                        p 19.1. O USUÁRIO reconhece e concorda que a Experiência de Sucesso não se responsabiliza (I) por qualquer dano, prejuízo ou perda no equipamento do USUÁRIO causado por falhas no sistema, no servidor ou na internet decorrentes de condutas de terceiros; (II) por danos decorrentes de ataques de vírus ao equipamento do USUÁRIO em decorrência do acesso, utilização ou navegação na Experiência de Sucesso ou como consequência da transferência de dados, arquivos, imagens, textos ou áudio contidos no mesmo.
+                                        p 19.2. Os Usuários isentam a Experiência de Sucesso de responsabilidade por danos suportados em virtude de prejuízos resultantes de dificuldades técnicas ou falhas nos sistemas ou na internet.
+
+                                        h6 20. Sanções
+                                        p 20.1. Sem prejuízo de outras medidas, a Experiência de Sucesso poderá advertir, suspender ou cancelar, temporária ou definitivamente o cadastro USUÁRIO, seus anúncios ou aplicar uma sanção que impacte negativamente em sua reputação, a qualquer tempo, iniciando as ações legais cabíveis e/ou suspendendo a utilização da plataforma EXPERIÊNCIA DE SUCESSO e todas as suas funcionalidades nas seguintes hipóteses:
+                                        p a) se o USUÁRIO não cumprir qualquer dispositivo deste instrumento e demais políticas da Experiência DE SUCESSO;
+                                        p b) se o USUÁRIO se utilizar da plataforma EXPERIÊNCIA DE SUCESSO para a prática de qualquer ato ilegal ou que seja contrário aos objetivos buscados com a sua utilização;
+                                        p c) se houver dúvida ou não puder ser confirmada a identidade do USUÁRIO ou qualquer informação fornecida por ele;
+                                        p d) se na Experiência de Sucesso entender que os anúncios ou qualquer atitude do USUÁRIO tenham causado algum dano a terceiros ou ao própria Experiência de Sucesso ou tenham a potencialidade de assim o fazer.
+                                        p 20.2. Nos casos de inabilitação do cadastro do USUÁRIO, todos os anúncios ativos e/ou ofertas realizadas serão automaticamente cancelados e a informação de que o USUÁRIO não pertence mais à comunidade será incluída ao lado do nome de USUÁRIO.
+
+                                        h6 21. Comunicações
+                                        p 21.1. As comunicações e notificações relacionadas a este Contrato deverão ser feitas por e-mail, com solicitação de confirmação de leitura, aos seguintes endereços:
+                                        p Se endereçados à Experiência de Sucesso: afiliados@experienciadesucesso.com.br
+                                        p Se endereçados ao AFILIADO: Ao endereço de email constante da ficha cadastral.
+                                        p 21.2. Será considerada como entregue toda e qualquer correspondência eletrônica endereçada ao e-mail do AFILIADO constante de sua ficha cadastral.
+
+                                        h6 22. Exclusão do AFILIADO
+                                        p 22.1. A EXPERIÊNCIA DE SUCESSO reserva-se o direito de, a qualquer tempo, excluir, mediante comunicação na forma prevista neste contrato, o USUÁRIO da plataforma EXPERIÊNCIA DE SUCESSO caso constate a prática de qualquer atividade contrária à lei, que infrinja o presente contrato ou ainda:
+                                        p a) que gere para o USUÁRIO qualquer forma de remuneração que não decorra da regular utilização da plataforma EXPERIÊNCIA DE SUCESSO;
+                                        p b) em caso de utilização indevida pelo USUÁRIO do nome, marca, imagens, textos, páginas, ainda que parcialmente, do site da Experiência DE SUCESSO, fora dos termos expressamente previstos neste contrato, sem que tal utilização tenha sido expressamente autorizada, ou ainda que autorizada, se em desacordo com os limites da autorização concedida no âmbito do Programa de Afiliados;
+                                        p c) em caso de o USUÁRIO utilizar as campanhas de e-mail marketing da Experiência DE SUCESSO para divulgação e/ou reenvio de mensagens, entre seus usuários e visitantes. Por exemplo: encaminhar e-mails enviados pela Experiência de Sucesso para os visitantes do site do USUÁRIO;
+                                        p d) na hipótese de o USUÁRIO utilizar seus links de AFILIADO para comprar produtos e obter descontos. Neste caso além poder ter sua conta terminada, as comissões geradas nesta COMERCIALIZAÇÃO podem ser invalidadas;
+                                        p e) na hipótese de o USUÁRIO utilizar o código de USUÁRIO para links, URLs, empáginas e imagens não cadastradas e autorizadas no Programa de Afiliados;
+                                        p f) na hipótese das transações geradas pela conta do USUÁRIO apresentarem qualquer suspeita de fraude índice anormal de reclamação dos COMPRADORES.
+                                        p 22.2. As hipóteses acima constituirão infrações gravíssimas que poderão acarretar, não apenas a imediata exclusão do AFILIADO do Programa de Afiliados, bem como a retenção das comissões eventualmente devidas e incidência de multa não compensatória prevista neste instrumento, sem prejuízo do direito da Experiência DE SUCESSO pleitear judicialmente a reparação das perdas e danos e eventuais lucros cessantes.
+                                        p 22.3. Na hipótese de exclusão do USUÁRIO, este ficará proibido de realizar novo cadastro no Programa de Afiliados pelo período de 01 (um) ano, a contar da data da exclusão, ficando sujeito ainda à comprovação pela equipe da Experiência DE SUCESSO que cessaram as causas de exclusão verificadas.
+                                        p 22.4. O USUÁRIO será informado de sua exclusão em qualquer das hipóteses acima e, havendo comissões devidas, a Experiência de Sucesso reserva-se o direito de retê-las até o limite da multa estipulada, caso esta seja efetivamente cobrada pela Experiência de Sucesso.
+                                        p 22.5. A EXPERIÊNCIA DE SUCESSO poderá encerrar, a seu exclusivo critério, quaisquer serviços oferecidos e remover quaisquer conteúdos nele publicados. A EXPERIÊNCIA DE SUCESSO poderá também restringir o acesso de Usuários a qualquer parte ou a todos os serviços oferecidos pela Experiência de Sucesso a qualquer momento, com ou sem justa causa ou notificação prévia, e por qualquer razão ou motivo.
+                                        p 22.6. Caso o USUÁRIO deseje terminar sua conta, poderá apenas cessar seu acesso e uso dos serviços prestados pela Experiência de Sucesso, que não será responsável, em qualquer hipótese, por manter ou devolver o conteúdo publicado, a conta, identificação ou senha do USUÁRIO.
+
+                                        h6 23. Prazo e Rescisão
+                                        p 23.1. Este Contrato vigorará por tempo indeterminado, a contar da aceitação do AFILIADO no Programa de Afiliados.
+                                        p 23.2. A EXPERIÊNCIA DE SUCESSO poderá a qualquer momento descontinuar parcial ou totalmente sua plataforma, sem ônus e mediante comunicado geral aos seus usuários com antecedência mínima de 30 (trinta) dias.
+
+                                        h6 24. Disposições Gerais
+                                        p 24.1. A qualquer tempo e a seu exclusivo critério, a Experiência de Sucesso poderá alterar as regras e procedimentos da operação de uso de sua plataforma, no que serefere, dentre outros, a forma de pagamento, distribuição e retenção de valores devidos ao AFILIADO.
+                                        p 24.2. A EXPERIÊNCIA DE SUCESSO poderá, a qualquer tempo, modificar quaisquer dos termos e condições contidas neste Contrato, circunstância que será comunicada ao AFILIADO.
+                                        p 24.3. Caso o AFILIADO discorde das modificações, ou das regras e procedimentos de operação ou dos termos e condições deste instrumento, fica facultada a sua retirada do Programa de Afiliados, através de comunicação feita aa Experiência de Sucesso na forma prevista neste instrumento. Caso o AFILIADO não apresente oposição às modificações sugeridas no prazo de 5 (cinco) dias contados da notificação encaminhada pela Experiência de Sucesso, seu silêncio será interpretado como aceitação às modificações propostas que passarão a valer na data informada pela Experiência de Sucesso.
+                                        p 24.4. O modelo operacional do Programa de Afiliados prevê a criação de links do Espaço Virtual do AFILIADO no site da Experiência DE SUCESSO. Na hipótese de o AFILIADO vir a publicar Produtos já publicados no site da Experiência DE SUCESSO, a exibição dos Produtos, suas características, preços e condições de pagamento no Espaço Virtual do AFILIADO deverão corresponder exatamente ao conteúdo exposto no site da Experiência DE SUCESSO, sendo o AFILIADO o único responsável perante clientes, órgãos de proteção e defesa do consumidor, por toda e qualquer divergência, arcando ainda com as multas, condenações, custas, honorários em que eventualmente incorrer a Experiência de Sucesso, sem prejuízo de ficar a Experiência de Sucesso autorizado à imediata exclusão do AFILIADO do Programa de Afiliados.
+                                        p 24.5. A EXPERIÊNCIA DE SUCESSO utiliza tecnologia de rastreamento de indicações baseada em Cookies. A gravação dos cookies nas máquinas dos usuários depende exclusivamente de configurações dos navegadores dos usuários, estando assim fora de controle da Experiência DE SUCESSO. Portanto, caso algum USUÁRIO elimine os cookies da Experiência DE SUCESSO de sua máquina e/ou desabilite os cookies, e/ou por qualquer outro motivo a Experiência de Sucesso seja impedido de ler o cookie da máquina do USUÁRIO, a Experiência de Sucesso não se responsabiliza pelo rastreamento de indicações deste USUÁRIO.
+                                        p 24.6. Não obstante o já previsto, a Experiência de Sucesso reserva-se o direito de cancelar o cadastro do AFILIADO no Programa de Afiliados, caso considere que o site do AFILIADO divulga qualquer material, imagem ou conteúdo ilegal ou imoral.
+                                        p 24.7. A política do site do AFILIADO não poderá estar em desacordo com a política vigente no site da Experiência DE SUCESSO.
+                                        p 24.8. As Partes comprometem-se a zelar pela manutenção do sigilo de todos os segredos comerciais, conhecimentos técnicos e outras informações de que venham a tomar conhecimento em função do relacionamento comercial de que trata o presente ajuste, não podendo usar qualquer dessas informações confidenciais, a não ser quando expressamente autorizadas para tanto por seu respectivo titular. Dessa forma, cada parte deverá fazer com que seus sócios, empresas afiliadas, administradores, prepostos, empregados e/ou quaisquer outras pessoas sob sua responsabilidade (direta ou indireta) mantenham em sigilo todos os termos e condições do presente Contrato.
+                                        p 24.9. A omissão ou tolerância das Partes, em exigir o estrito cumprimento dos termos e condições deste Termo, não constituirá novação ou renúncia, nem afetará os seus direitos, que poderão ser exercidos a qualquer tempo.
+                                        p 24.10. Este Contrato representa o total entendimento entre as Partes, com relação a seu objeto e substitui todas as ofertas, propostas, declarações, representações ou acordos anteriores, relacionados ao objeto ora acordado.
+                                        p 24.11. Este Contrato não gera nenhum vínculo de sociedade, de mandato, franquia ou relação de trabalho entre EXPERIÊNCIA DE SUCESSO e o USUÁRIO. O USUÁRIO manifesta ciência de que a Experiência de Sucesso não é parte de nenhuma transação, nem possui controle algum sobre a qualidade, segurança ou legalidade dos produtos anunciados e sobre a veracidade ou exatidão dos anúncios. A EXPERIÊNCIA DE SUCESSO não pode assegurar o êxito de qualquer transação, tampouco verificar a identidade ou os dados pessoais dos usuários. EXPERIÊNCIA DE SUCESSO não garante a veracidade da publicação de terceiros que apareça em seu site.
+
+                                        h6 25. Foro
+                                        p 25.1. Fica eleito o foro da comarca de São Paulo/SP como o único competente para dirimir eventuais controvérsias referentes à interpretação e ao cumprimento deste Contrato, independentemente de outro, por mais privilegiado que seja.
+
+                                        h6 CONDIÇÕES GERAIS
+                                        p 1. A campanha é válida somente para vendas dos produtos oferecidos na Plataforma Experiência de Sucesso.
+                                        p 2. A bonificação em prêmios oferece: O Upgrade para a categoria Diamond e o livro Speedwealth para os que atingirem 20 vendas; curso presencial Mission to Millions para os que atingirem 50 vendas; curso presencial Financial Freedom Strategies 1 e 2 para os que atingirem 80 vendas; o curso presencial Train The Trainer e Guerrilha Business Intensive para os que atingirem 120 vendas e o curso presencial Quantum Leap para os que atingirem 200 vendas. As bonificações NÃO PODEM EM HIPÓTESE ALGUMA serem convertidas em premiação em dinheiro. Os cursos são pessoais e intransferíveis.
+                                        p 2.1 Caso o ganhador do Prêmio já tenha realizado o Curso em Questão, ele terá 5 dias a contar da comunicação oficial para indicar alguém para realizar o curso.
+                                        p 3. As premiações não são cumulativas.
+                                        p 4. Para efeito de atingimento das metas da premiação serão contabilizadas a soma das venda por edição de eventos.
+
+                                        h6 REGRAS
+                                        p 1. É expressamente proibido enviar mensagens de divulgação não autorizadas (SPAM).
+                                        p 2. É proibido contatar as pessoas que deixarem comentário nos vídeos, grupos do Facebook, Fanpage, Blogs ou qualquer outra rede social da Experiência de Sucesso, Success Resources para fazer ofertas para comprarem com o seu link de afiliado.
+                                        p 3. É proibido contatar a pessoa para mudar de afiliado.
+                                        p 4. É proibido fazer anúncios do tipo: ganhar dinheiro fácil, fique rico, ganhar dinheiro de graça ou semelhantes. Esse tipo de anúncio passa a impressão errada para os usuários de que os resultados serão obtidos sem esforço ou trabalho.
+                                        p 5. É proibido anúncios, banners ou qualquer outro tipo de peça promocional que contenha imagens com: corpo de mulher ou corpo de homem que indiquem conotação sexual e imagens chocantes.
+                                        p 6. É proibido fazer um site ou mídia social que represente ou seja parecido com o evento Millionaire Mind Intensive (MMI) para se passar pela Experiência de Sucesso ou Success Resources sem autorização prévia.
+                                        p 7. É proibido assinar e-mails como Doug Nelson, T. Harv Eker, Leandro Marcondes, Experiência de Sucesso, Success Resources ou qualquer outro relacionado.
+                                        p 8. Não é permitido fazer anúncios e/ou enviar e-mails com assuntos que denigram ou coloque em dúvida a integridade Doug Nelson, T. Harv Eker, Leandro Marcondes, Experiência de Sucesso, Success Resources, ou qualquer outro termo que remeta ao Millionaire Mind Intensive para chamar a atenção. Exemplos: Doug Nelson é uma fraude? Experiência de Sucesso é picaretagem? Não compre Millionaire Mind Intensive.
+                                        p 9. É proibido dar descontos do tipo devolução de parte do dinheiro ou comissões, pois isso reduz a percepção de valor dos produtos.
+                                        p 10. É proibido dar desconto ou parte do dinheiro ou comissões, para pessoas indicarem o seu link de afiliado.
+                                        p 11. Não é permitido alterar a oferta de Milllionaire Mind Intensive. Se você for dar um bônus, tem que deixar explícito que o bônus é seu e não da Experiência de Sucesso.
+                                        p 12. Não é permitido utilizar o nome “Experiência de Sucesso” no seu bônus, pois isso pode dar a falsa impressão de que é algo oficial do Millionaire Mind Intensive, Experiência de Sucesso ou Success Resources e não um bônus do afiliado. Ex.: Millionaire Mind Intensive Plus – Experiência de Sucesso Power - Success Resources na Prática
+                                        p 13. Não é permitido compartilhar, incorporar (embed), baixar, editar ou hospedar os vídeos de lançamento e de vendas em qualquer site ou serviço de vídeo. Os vídeos de lançamentos são exclusivos para o site do Experiência de Sucesso ou Millionaire Mind Intensive e não devem ser dissociados de tal site, portanto o afiliado deve compartilhar apenas os links de afiliado para as páginas do lançamento.
+                                        p 14. Não é permitido baixar, editar ou hospedar em local diferente qualquer vídeo produzido pelo Doug Nelson ou pela Experiência de Sucesso, a menos que orientado explicitamente o contrário.
+                                        p 15. É proibido associar ou comparar Doug Nelson com outros profissionais e empresas da área. Ex: Tony Robbins, John Grinder, Richard Branson e outros.
+                                        p 16. Nós reservamos o direito de mudar, retirar e acrescentar regras se virmos necessidade pensando sempre interesse coletivo dos afiliados.
+                                        p 17. O AFILIADO poderá criar estrutura própria própria de divulgação de venda, como hotsites e blogs, desde que autorizados pela Experiência de Sucesso. Neste caso, um link específico de checkout direto será fornecido para o afiliado, caso seja pedido.
+
+                                    .modal-footer
+                                        button(type="button" class="btn btn-default botao-aceitar" data-dismiss="modal") Aceitar
+                                        button(type="button" class="btn btn-default botao-recusar" data-dismiss="modal") Recusar
+
+                        .form-contato.row.pd-40-top.text-center
+                            .col-sm-12
+                                button.btn.bg-oceano.text-inverse.btn-lg Quero ser um Filiado
+
+   
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")

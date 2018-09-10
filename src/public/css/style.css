@@ -436,7 +436,7 @@ button {
 }
 .btn:focus {
   background-color: #06c47a;
-  color: #06c47a;
+  color: #fff;
 }
 .btn:active {
   background-color: transparent;
@@ -1020,6 +1020,53 @@ header {
 .loader-img {
   height: 90px;
 }
+.redes-sociais-topo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.redes-sociais-topo img {
+  width: 30px;
+  padding-left: 10px;
+}
+.icones-topo p {
+  margin: 0;
+  font-weight: lighter;
+}
+.menu {
+  width: 40px;
+  position: absolute;
+  right: 0;
+  display: inline;
+}
+@media screen and (max-width: 900px) {
+  .icones-topo {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .redes-sociais-topo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 40px;
+    position: absolute;
+    right: 0;
+    display: inline;
+  }
+  .redes-sociais-topo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .line {
   position: relative;
 }
@@ -1286,6 +1333,25 @@ img.slick-disabled {
   border: 1px solid #e5e5e5;
   box-shadow: inset 0 0 0 rgba(0,0,0,0.075);
 }
+.fontes-modal {
+  font-weight: lighter;
+}
+.botao-recusar {
+  background-color: #fff;
+  color: #f00;
+  border: 1px solid #f00;
+}
+.botao-recusar:hover {
+  background: #f00;
+  color: #fff;
+  border: 1px solid #f00;
+  transition: 1s;
+}
+.botao-aceitar:hover {
+  background-color: #06c47a;
+  color: #fff;
+  transition: 1s;
+}
 @media screen and (max-width: 768px) {
   .line-couch {
     display: none;
@@ -1470,9 +1536,6 @@ footer .contato {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .menu {
-    display: none;
   }
 }
 @media (max-width: 992px) {

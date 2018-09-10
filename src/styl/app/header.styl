@@ -39,3 +39,38 @@ footer
 
 .loader-img
 	height 90px
+
+.redes-sociais-topo
+	display: flex
+	justify-content flex-end
+	img 
+		width 30px
+		padding-left: 10px
+
+.icones-topo
+	p
+		margin 0
+		font-weight: lighter
+
+.menu
+	width:40px; 
+	position: absolute; 
+	right: 0;  
+	display:inline
+
+@media screen and (max-width: 900px)
+	.icones-topo
+		display: none
+
+@media screen and (max-width: 800px)
+	.redes-sociais-topo
+		justify-content center
+
+@media screen and (max-width: 600px)
+	.menu
+		width:40px; 
+		position: absolute; 
+		right: 0;  
+		display:inline
+	.redes-sociais-topo
+		justify-content center
